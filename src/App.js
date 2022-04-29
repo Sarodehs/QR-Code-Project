@@ -1,25 +1,58 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Menu from './components/Menu';
+import Home from './components/home';
+import Pricing from './components/pricing';
+import ContactUs from './components/contact';
+import LogIn from './components/login';
+import Register from './components/register';
+import Footer from './components/Footer';
+import Registernow from './components/registernow';
+import Monthly from './components/monthly';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Router>
+
+        <Menu />
+
+        <Routes>
+          <Route path='/' element={ <Home />  } />
+          <Route path='pricing/' element={  <Pricing /> } />
+          <Route path='contact/' element={  <ContactUs /> } />
+          <Route path='login/' element={  <LogIn /> } />
+          <Route path='register/' element={ <Register />  }>
+
+            {/* <Route path='register/Registernow/' element={ <Registernow />  } /> */}
+          </Route>
+        
+          
+        </Routes>
+             
+        <Routes>
+          <Route path='register/registernow/' element={ <Registernow />  } />
+        </Routes>
+
+        <Routes>
+          <Route path='pricing/monthly/' element={ <Monthly/> } />
+        </Routes>
+
+
+        <Footer />
+
+      </Router>
+
+    </>
   );
 }
 
 export default App;
+
+
+
