@@ -151,6 +151,12 @@ html,body
   font-size: x-small;
   margin-left: 70%;
   margin-top: -22%;
+  background-color: #B5876D;
+  color: white;
+}
+.yearly i
+{
+  color: #B5876D;
 }
 .yearly span
 {
@@ -246,16 +252,18 @@ html,body
 
 /* media query for pricing section */
 
-@media screen and (max-width:1200)
+@media screen and (min-width:1200)
 {
   .yearly .card
   {
+    background-color: aqua !important;
     width: 80% !important;
     margin: 0% !important;
     padding: 0% !important;
   }
   .yearly ul li button
   {
+    background-color: aquamarine !important;
     padding: 0% !important;
   }
   .faq

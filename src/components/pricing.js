@@ -44,12 +44,12 @@ const pricing = () => {
                                 {/* <!-- list part in free plan card --> */}
                                 <ul class="list-group">
 
-                                    <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i>Easy Upload of your menu in the system<br/>
-                                    <i class="fa fa-check" aria-hidden="true"></i>Digital menu on the table of your restaurant<br/>
-                                    <i class="fa fa-check" aria-hidden="true"></i>Online menu editing in the webpage<br/>
-                                    <i class="fa fa-check" aria-hidden="true"></i>Easy upload of images on the system<br/>
-                                    <i class="fa fa-check" aria-hidden="true"></i>Unlimited adding of menu items<br/>
-                                    <i class="fa fa-check" aria-hidden="true"></i>Custom QR codes(10 QR codes)<br/><br/>
+                                    <li class="list-group-item"><i class="fa fa-check pe-3" aria-hidden="true"></i>Easy Upload of your menu in the system<br/>
+                                    <i class="fa fa-check pe-3" aria-hidden="true"></i>Digital menu on the table of your restaurant<br/>
+                                    <i class="fa fa-check pe-3" aria-hidden="true"></i>Online menu editing in the webpage<br/>
+                                    <i class="fa fa-check pe-3" aria-hidden="true"></i>Easy upload of images on the system<br/>
+                                    <i class="fa fa-check pe-3" aria-hidden="true"></i>Unlimited adding of menu items<br/>
+                                    <i class="fa fa-check pe-3" aria-hidden="true"></i>Custom QR codes(10 QR codes)<br/><br/>
                                     <button type="button" class="btn btn-sm px-5 pe-5 silbtn">Chooose</button>
                                     </li>
                                 
@@ -71,7 +71,7 @@ const pricing = () => {
                                 <div class="card-header text-center mt-3">
 
                                     <h6 class="mx-5" style={{color: "#FF7000"}}>Gold Plan  </h6>
-                                        <button class="btn btn-dark btn-sm px-4 pe-4 popularbtn rounded-pill"><small>Popular</small></button>
+                                        <button class="btn btn-sm px-4 pe-4 popularbtn rounded-pill"><small>Popular</small></button>
                                     {/* </h6> */}
                                     <h3><span class="material-icons-outlined">currency_rupee</span>05<span>K</span></h3>
                                     <p><small class="text-muted">Per member Per Month</small></p>
@@ -81,10 +81,10 @@ const pricing = () => {
                                 {/* <!-- list part in gold plan card --> */}
                                 <ul class="list-group">
 
-                                    <li class="list-group-item"><i class="fa-solid fa-circle"></i><b>Everything in a Silver plan</b><br/>
-                                    <i class="fa fa-check" aria-hidden="true"></i>Custom QR code(Unlimited QR codes)<br/>
-                                    <i class="fa fa-check" aria-hidden="true"></i>Creation of special offers and discounts<br/>
-                                    <i class="fa fa-check" aria-hidden="true"></i>Contactless payments<br/><br/><br/>
+                                    <li class="list-group-item"><i class="fa-solid fa-circle pe-3"></i><b>Everything in a Silver plan</b><br/>
+                                    <i class="fa fa-check pe-3" aria-hidden="true"></i>Custom QR code(Unlimited QR codes)<br/>
+                                    <i class="fa fa-check pe-3" aria-hidden="true"></i>Creation of special offers and discounts<br/>
+                                    <i class="fa fa-check pe-3" aria-hidden="true"></i>Contactless payments<br/><br/><br/>
                                     <button type="button" class="btn px-5 pe-5 navbtn btn-sm">Chooose</button>
                                     </li>
 
@@ -114,10 +114,10 @@ const pricing = () => {
                                 {/* <!-- list part in silver plan card --> */}
                                 <ul class="list-group">
 
-                                    <li class="list-group-item"><i class="fa-solid fa-circle"></i><b>Everything in a Free plan</b><br/>
-                                    <i class="fa fa-check" aria-hidden="true"></i>Custom QR code(25 QR codes)<br/>
-                                    <i class="fa fa-check" aria-hidden="true"></i>Choose your own theme<br/>
-                                    <i class="fa fa-check" aria-hidden="true"></i>24*7 customer support<br/><br/><br/>
+                                    <li class="list-group-item"><i class="fa-solid fa-circle pe-3"></i><b>Everything in a Free plan</b><br/>
+                                    <i class="fa fa-check pe-3" aria-hidden="true"></i>Custom QR code(25 QR codes)<br/>
+                                    <i class="fa fa-check pe-3" aria-hidden="true"></i>Choose your own theme<br/>
+                                    <i class="fa fa-check pe-3" aria-hidden="true"></i>24*7 customer support<br/><br/><br/>
                                     <button type="button" class="btn btn-sm px-5 pe-5 silbtn">Chooose</button>
                                     </li> 
                                 
