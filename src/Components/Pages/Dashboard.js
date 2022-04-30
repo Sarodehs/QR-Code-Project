@@ -169,7 +169,7 @@ const Dashboard = () =>  {
                                                     <img src="../assets/images/cardimg8.png" className="img-fluid rounded-start" alt="img"/>
                                                 </div>
                                                 <div className="col-md-6 col-xl-6 col-sm-6">
-                                                    <div>
+                                                    <div> 
                                                         <div><img src="../assets/images/veg.png" className="img-fluid" alt="veg"/>Veg - 15</div>
                                                         <div> <img src="../assets/images/nonveg.png" className="img-fluid" alt="nonveg"/>Non Veg - 33</div>
                                                         <div><img src="../assets/images/egg.png" className="img-fluid" alt="egg"/>Egg - 12</div>

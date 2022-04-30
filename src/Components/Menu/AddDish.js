@@ -28,11 +28,11 @@ const AddDish = () => {
 
                             <div className="card col-md-12 col-xl-10  col-sm-12" >
                                 <div className="row g-0">
-                                    <div className="col-md-3 col-xl-3  col-sm-3 p-4">
-                                        <div className=" bg-light bg-gradient w-90 h-75  justify-content-center align-items-center d-flex">
-                                            <span class="material-icons-outlined">image</span>
+                                    <div className="col-md-3 col-xl-3  col-sm-3 ">
+                                        <div className=" justify-content-center align-items-center d-flex p-4">
+                                        <img src="/assets/images/AddDishimg.png" className="img-fluid" alt="img"/>
                                         </div>
-                                        <div className="d-grid justify-content-center align-items-center d-flex p-4">
+                                        <div className="d-grid justify-content-center align-items-center d-flex p-2">
                                             <button className="btn  buttonfocuscolor d-flex" type="button">
                                                 <span class="material-icons-outlined">file_upload</span> Upload Image
                                             </button>
@@ -42,7 +42,7 @@ const AddDish = () => {
                                         <div className="card-body">
                                             <div className="col-xl-12 col-md-12">
                                                 <input type="text" className="form-control inputfocus mb-4" placeholder="Name of Food" />
-                                                <textarea className="form-control inputfocus mb-4" id="exampleFormControlTextarea1" placeholder="Write Ingredient " rows="6"></textarea>
+                                                <textarea className="form-control inputfocus mb-4" id="exampleFormControlTextarea1" placeholder="Write Ingredient " rows="7"></textarea>
                                             </div>
                                         </div>
                                     </div>
