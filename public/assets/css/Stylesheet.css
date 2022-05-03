@@ -37,7 +37,7 @@ html,body
 {
   outline: none !important;
   outline-width: 0 !important;
-  box-shadow: none;
+  box-shadow: none !important;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 } 
@@ -45,7 +45,7 @@ html,body
 {
   outline: none !important;
   outline-width: 0 !important;
-  box-shadow: none;
+  box-shadow: none !important;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }
@@ -80,7 +80,7 @@ html,body
 {
   outline: none !important;
   outline-width: 0 !important;
-  box-shadow: none;
+  box-shadow: none !important;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }
@@ -119,6 +119,596 @@ html,body
   color: white;
 }
 
+
+
+
+/* home section */
+
+/* banner part in home */
+
+.banner h1
+{
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+.banner h3
+{
+  font-weight: 400;
+}
+.banner .contactless
+{
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+.banner .number
+{
+  color: #B5876D;
+}
+.homebannerdownarrow
+{
+  margin-top: 100% ;
+  padding-top: 100% ;
+}
+.homebtnarrow
+{
+  color: var(--main);
+}
+.cust
+{
+  border-right: 2px solid #B5876D;
+}
+#dropdownMenuButton1:focus
+{
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; 
+}
+#dropdownMenuButton1 ul
+{
+  border: none;
+}
+
+
+@media screen and (max-width:1200px)
+{
+  .banner
+  {
+    text-align: center;
+  }  
+  .banner .bannerleft
+  {
+    margin-left: 0% !important;
+    padding-left: 0% !important;
+  }
+  .banner .homebannerdownarrow
+  {
+    height: 80%;
+    width: 40%;
+    margin-top: 0%;
+    padding-top: 0%;
+  }
+  .banner .bannerright
+  {
+    padding-top: 0% !important;
+  }
+}
+
+
+/* scan menu part */
+
+.qrmenu
+{
+  margin-top: 18%;
+}
+.scanqr
+{
+  margin-top: 10%;
+}
+.openmenu
+{
+  margin-top: 5%;
+}
+
+
+@media screen and (max-width:1200px)
+{
+  .scanmenu .qrmenu
+  {
+    height: 50%;
+    width: 60%;
+    margin-left: 15% !important;
+  }
+  .scanmenu .scanqr
+  {
+    height: 70%;
+    width: 90% !important;
+    margin-top: 0% !important;
+  }
+  .scanmenu .openmenu
+  {
+    width: 90% !important;
+  }
+  .scanmenu .placeorder
+  {
+    width: 90%;
+  }
+}
+
+
+/* procedure part */
+
+.procedure h6
+{
+  color: var(--main);
+}
+.scancard
+{
+  margin-left: 40%;
+  bottom: -7%;
+  height: 25%; 
+  width: 40%;
+  border-radius: 5%;
+}
+.menucard
+{
+  margin-left: 10%;
+  z-index: -1;
+  height: 55%; 
+  width: 50%;
+}
+.waitcard
+{
+  margin-left: 45%;
+  top: -10%; 
+  height: 20%;
+  width: 35%;
+  border-radius: 10%;
+}
+.menubtn
+{
+  width: 20%;
+  margin-left: 60%;
+}
+.menucard ul
+{
+  width: 70%;
+  margin-left: 15%;
+}
+.menucard ul li
+{
+  background-color: #B5876D;
+  font-size: 12px;
+}
+.bellicon
+{
+  color: #B5876D;
+  font-size: 80px;
+}
+.optioncard
+{
+  margin-left: 10%;
+  height: 25%; 
+  width: 95%;
+  border-radius: 5%;
+  bottom: -4%;
+  display: flex;
+  justify-content: space-between;
+}
+.potatoimg
+{
+  margin-top: -180%;
+  margin-left: 120%;
+}
+.paycard
+{
+  margin-left: 25%;
+  z-index: -1;
+  height: 55%; 
+  width: 62%;
+}
+.ordercard
+{
+  margin-left: 8%;
+  height: 20%; 
+  width: 35%;
+  border-radius: 10%;
+  top: -5%;
+}
+.chefspecial
+{
+  font-weight: 600;
+}
+.addbtn
+{
+  background-color: white;
+  margin-top: -170%;
+  margin-left: 130%;
+  height: 20px;
+  padding: 0% 10px 0% 10px;
+}
+.paymethod
+{
+  width: 80%;
+}
+
+
+@media screen and (max-width:1200px)
+{
+  .procedure
+  {
+    margin-bottom: 0% !important;
+    margin-top: 0% !important;
+  }
+  .procedure .addbtn
+  {
+    margin-top: -180%;
+    margin-left: 130% !important;
+  }
+  .procedure .potatoimg
+  {
+    height: 90%;
+    width: 80%;
+  }
+  .procedure .colthree
+  {
+    width: 90%;
+  }
+  .procedure .videoprocess
+  {
+    width: 70% !important;
+    height: 85%;
+  }
+  .procedure .optioncard
+  {
+    width: 80% !important;
+    height: 25% !important;
+  }
+  .procedure .paycard
+  {
+    width: 70% !important;
+    height: 50% !important;
+  }
+  .procedure .waitcard
+  {
+    width: 40% !important;
+    height: 20% !important;
+  }
+  .procedure .menucard
+  {
+    width: 60% !important;
+    height: 58% !important;
+  }
+  .procedure .scancard
+  {
+    width: 40% !important;
+    height: 25% !important;
+  }
+  .procedure .ordercard
+  {
+    width: 40% !important;
+    height: 20% !important;
+    margin-top: 5%;
+  }
+  .procedure .optioncard p
+  {
+    width: 75%;
+  }
+  .try .cardform input
+  {
+    width: 80%;
+  }
+}
+
+
+
+@media screen and (max-width:280) 
+{
+  .procedure .waitcard
+  {
+    width: 40% !important;
+    height: 20% !important;
+  }
+  .procedure .menucard
+  {
+    width: 60% !important;
+    height: 58% !important;
+  }
+  .procedure .scancard
+  {
+    width: 40% !important;
+    height: 25% !important;
+  }
+  .procedure .ordercard
+  {
+    width: 40% !important;
+    height: 20% !important;
+    margin-top: 5%;
+  }
+  .procedure .optioncard
+  {
+    width: 80% !important;
+    height: 90% !important;
+  }
+  .procedure .paycard
+  {
+    width: 70% !important;
+    height: 50% !important;
+  }
+}
+
+
+/* Our offerings */
+
+.offerings h2
+{
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.offerings h6
+{
+  font-weight: 600 !important;
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+
+
+@media screen and (max-width:280) 
+{
+  .offerings
+  {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center !important;
+  }
+  .offerings h2
+  {
+    /* text-align: center; */
+    padding-top: 0% !important;
+    margin-left: 0% !important;
+  }
+  .offerings row
+  {
+    margin-left: 0% !important;
+  }
+  .offerings .offeringsleft
+  {
+    padding-left: 0% !important;
+  }
+  .offerings .offeringsleft h6
+  {
+    margin-top: 0% !important;
+    padding-top: 0% !important;
+  }
+  .offerings .offerarrow
+  {
+    padding-left: 0%;
+  }
+}
+
+
+/* why choose us part */
+
+.wcu h2
+{
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.wcu span
+{
+  font-weight: 350;
+}
+.wculist ul
+{
+  list-style: none;
+}
+.wculist ul li
+{
+  line-height: 300%;
+  font-size: 18px;
+}
+.wcu h3
+{
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+
+@media screen
+{ 
+  .ladyimg
+  {
+    margin-top: 100%;
+  }
+}
+
+
+@media screen and (max-width:1200) 
+{
+  .wcu
+  {
+    text-align: center;
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+  }
+  .wcu h2
+  {
+    padding-top: 0% !important;
+  }
+  .wculist
+  {
+    text-align: left;
+    margin-left: 0% !important;
+    padding-top: 0% !important;
+  }
+  .wcu ul
+  {
+    width: 85%;
+  }
+  .wcu .ladyimg
+  {
+    margin-top: 0% !important;
+  }
+  .wcu .wcupricing
+  {
+    margin-bottom: 0% !important;
+  }
+}
+
+
+/* key features part */
+
+.keyfeatures h2
+{
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.keyfeatures h5
+{
+  font-weight: 600;
+}
+.keyfeatures .contactless
+{
+  text-align: justify;
+}
+
+
+@media screen and (max-width:1200px)
+{
+  .keyfeatures
+  {
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+  }
+  .keyfeatures h2
+  {
+    text-align: center;
+  }
+  .keyfeatures .resmenu
+  {
+    width: 90%;
+  }
+  .keyfeatures .contactless
+  {
+    margin-left: 0% !important;
+    width: 90%;
+    text-align: justify;
+  }
+}
+
+
+/* try our services part */
+
+.try h2
+{
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  padding-top: 15%;
+}
+.try h2 span
+{
+  font-weight: 600;
+}
+.try .card
+{
+  width: 70%;
+}
+.one
+{
+  height: 10rem;
+  width: 66% !important;
+  margin-bottom: -55%;
+  background-color: red;
+}
+.two
+{
+  height: 12rem;
+  margin-top: 30%;
+  width: 63% !important;
+  background-color: #FF7000;
+}
+.three
+{
+  width: 60% !important;
+  height: fit-content;
+  margin-top: -30%;
+}
+.tryarrow
+{
+  margin-left: 70%;
+  margin-top: -25%;
+}
+.try .cardform
+{
+  box-shadow: 0 0 2px rgb(128,128,128);
+}
+.try .cardform h3
+{
+  font-weight: 600;
+}
+
+
+@media only screen  and (max-width:1200px)
+{
+  .try h2
+  {
+    margin-bottom: 20% !important;
+  }
+  .try .one
+  {
+    width: 80%;
+    margin-bottom: -70%;
+  }  
+  .try .two
+  {
+    width: 75%;
+    margin-top: 30%;
+  }
+  .try .three
+  {
+    width: 70%;
+    margin-top: -55%;
+    height: 100% !important;
+  } 
+  .try .three img
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .try .three p
+  {
+    text-align: justify;
+  }
+  .try .tryarrow
+  {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+/*@media screen and (min-width:540px)
+{
+  .try .one
+  {
+    width: 80%;
+    margin-bottom: -60%;
+  }  
+  .try .two
+  {
+    width: 75%;
+    margin-top: 30%;
+  }
+  .try .three
+  {
+    width: 70%;
+    margin-top: -40%;
+    height: 100% !important;
+  } 
+} */
 
 
 
@@ -212,11 +802,19 @@ html,body
   font-size: 2.5rem !important;
 }
 
+/* review by customer */
+
+.customerreview .card
+{
+  border: none;
+  box-shadow: 0 0 2px var(--main);
+}
+
 /* faq in pricing */
 
 .faq
 {
-  background-image: url('../images/bgimg.png');
+  background-image: url('../images/bgimg.png') !important;
   background-repeat: no-repeat;
   width: 90%;
 }
@@ -254,17 +852,42 @@ html,body
 
 @media screen and (min-width:1200)
 {
-  .yearly .card
+  /* .yearly .card
   {
-    background-color: aqua !important;
+    
     width: 80% !important;
     margin: 0% !important;
     padding: 0% !important;
   }
   .yearly ul li button
   {
-    background-color: aquamarine !important;
+    
     padding: 0% !important;
+  } */
+  .customer
+  {
+    margin: 0% ;
+    padding: 0% ;
+  }
+  .customer row
+  {
+    margin: 0% ;
+  }
+  .customer .picons
+  {
+    margin-top: 0% !important;
+    padding-top: 0% !important;
+    text-align: center ;
+  }
+  .customer .picons .pricon
+  {
+    margin-top: -20% ;
+    padding-top: 0%;
+  }
+  .customer img
+  {
+    /* margin-top: 10%; */
+    margin-bottom: 0% !important;
   }
   .faq
   {
@@ -281,7 +904,7 @@ html,body
 
 .contact
 {
-  background-image: url('../images/img.png');
+  background-image: url('../images/img.png') !important;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -306,14 +929,14 @@ html,body
 {
   outline: none !important;
   outline-width: 0 !important;
-  box-shadow: none;
+  box-shadow: none !important;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }
 .map
 {
   /* background-color: #fdeee3; */
-  background-image: url('../images/mapbg.png');
+  background-image: url('../images/mapbg.png') !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -379,7 +1002,7 @@ html,body
 {
   outline: none !important;
   outline-width: 0 !important;
-  box-shadow: none;
+  box-shadow: none !important;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }
@@ -511,7 +1134,7 @@ html,body
   height: 100%;
   border: none;
   box-shadow:0 0 4px var(--main);
-  background-image: url('../images/registerbg.png');
+  background-image: url('../images/registerbg.png') !important;
   background-repeat: no-repeat;
 }
 
@@ -541,7 +1164,7 @@ html,body
 {
   outline: none !important;
   outline-width: 0 !important;
-  box-shadow: none;
+  box-shadow: none !important;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }

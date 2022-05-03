@@ -143,22 +143,52 @@ const pricing = () => {
 
                 <h3 class="px-5 mx-5">What our Customers say?</h3>
 
-                <div class="text-center mt-5 mb-4">
+                <div class="text-center mt-5 mb-4 customer">
 
                     {/* our customers */}
-                    <span class="material-icons picons pe-5">arrow_circle_left</span>
+                    <div class="row">
+
+                        <div class="col-xl-1"></div>
+
+                        <div class="col-xl-1 mt-5 pt-3">
+                            <span class="material-icons picons pe-5">arrow_circle_left</span>  
+                        </div>
+                        
+                        <div class="col-xl-2 mt-5">
+                            <img src="../assets/images/p1.png" height="65%" width="60%" class="pe-5" alt="first person"/>
+                        </div>
+
+                        <div class="col-xl-2 mb-4">
+                            <img src="../assets/images/p2.png" height="100%" width="90%" class="pe-5" alt="second person"/>   
+                        </div>
+
+                        <div class="col-xl-2 mt-5">
+                            <img src="../assets/images/p3.png" height="65%" width="60%" class="pe-5" alt="third person"/>
+                        </div>
+
+                        <div class="col-xl-1 mt-5 pt-3">
+                            <span class="material-icons picons">arrow_circle_right</span>
+                        </div>
+                        
+                        <div class="col-xl-2"></div>
+
+                    </div>
+
+                    {/* <span class="material-icons picons pe-5">arrow_circle_left</span>
                     <img src="../assets/images/p1.png" height="12%" width="10%" class="pe-5" alt="first person"/>
                     <img src="../assets/images/p2.png" height="15%" width="15%" class="pe-5" alt="second person"/>
                     <img src="../assets/images/p3.png" height="12%" width="10%" class="pe-5" alt="third person"/>
-                    <span class="material-icons picons">arrow_circle_right</span>
+                    <span class="material-icons picons">arrow_circle_right</span> */}
 
                 </div>    
 
                 {/* review by customer */}
-                <div class="card mx-auto mt-5 mb-5" style={{width:"45%"}}>
-                    <div class="card-text mt-4 mx-3"><b>QR Scanner is a intuitive & affordable options our match perfectly. I am now so happy to us this system It saves time</b></div>
-                    <div class="card-body mt-3 mx-0"><b>Mr. Sonal Rathi</b></div>
-                    <div class="card-subtitle mb-4 mx-3"><small class="text-muted">Natural chain of hotels, Banglore</small></div>
+                <div class="customerreview">
+                    <div class="card mx-auto mt-5 mb-5" style={{width:"45%"}}>
+                        <div class="card-text mt-4 mx-3"><b>QR Scanner is a intuitive & affordable options our match perfectly. I am now so happy to us this system It saves time</b></div>
+                        <div class="card-body mt-3 mx-0"><b>Mr. Sonal Rathi</b></div>
+                        <div class="card-subtitle mb-4 mx-3"><small class="text-muted">Natural chain of hotels, Banglore</small></div>
+                    </div>
                 </div>
 
             </div>
