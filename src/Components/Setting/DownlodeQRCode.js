@@ -1,10 +1,8 @@
 
-import { NavLink} from 'react-router-dom'
+
 import React from "react";
 import SettingNav from "../SettingNav";
-
-
-const GenerateQRCode = ({ children }) => {
+const DownlodeQRCode = ({ children }) => {
     return (
         <>
             <div className="container-fluid displayflex ">
@@ -18,16 +16,14 @@ const GenerateQRCode = ({ children }) => {
                                 </div>
                                 <div className="col-xl-10 col-md-12 col-sm-12 p-4">
                                     <div className="row">
-                                        <div className="col-xl-6 col-md-12 col-sm-12 text-center">                                            
+                                        <div className="col-xl-6 col-md-6 col-sm-6 text-center">                                            
                                             <img src="/assets/images/qr-code.png" className="img-fluid rounded-start w-75 p-4" alt="img" />
-                                            <div className="d-grid gap-2 col-xl-4 col-md-4 col-sm-2 mx-auto p-2">
-                                            <NavLink to="DownlodeQRCode/"  style={{ textDecoration: 'none' }}>
-                                                <button className="btn buttonfocuscolor" type="button" >GENERATE QR CODE</button>
-                                                </NavLink>
+                                            <div className="d-grid gap-2 col-xl-5 col-md-5 col-sm-4 mx-auto">
+                                                <button className="btn buttonfocuscolor" type="button" >DOWNLODE QR CODE</button>
                                             </div>
                                         </div>
-                                        <div className="col-xl-6 col-md-12 col-sm-12 p-4">
-                                            <img src="/assets/images/qr-code1.png" className="img-fluid rounded-start w-75" alt="img" />
+                                        <div className="col-xl- col-md-6 col-sm-6 p-4">
+                                            <img src="/assets/images/qr-code2.png" className="img-fluid rounded-start w-75" alt="img" />
                                         </div>
                                     </div>
 
@@ -44,7 +40,7 @@ const GenerateQRCode = ({ children }) => {
         </>
     );
 }
-export default GenerateQRCode;
+export default DownlodeQRCode;
 
 
 

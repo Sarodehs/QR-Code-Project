@@ -25,7 +25,11 @@ const Starters = () => {
                                         <div>
                                 </div>
                                        
-                                       <NavLink to="AddDish/" ><button className="btn  buttonfocuscolor d-flex" type="button"><span class="material-icons-outlined">add</span> ADD DISH</button></NavLink>
+                                       <NavLink to="AddDish/"  style={{ textDecoration: 'none' }}>
+                                           
+                                           <button className="btn  buttonfocuscolor d-flex" type="button">
+                                           <span class="material-icons-outlined">add</span> ADD DISH</button>
+                                        </NavLink>
                                       
                                         </div>
                                     </div>
@@ -46,6 +50,7 @@ const Starters = () => {
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            <tr></tr>
                                             <tr>
                                                 <th scope="row">1001</th>
                                                 <td><img src="/assets/images/Starters1.png" className="img-fluid" alt="img"/></td>
@@ -54,7 +59,7 @@ const Starters = () => {
                                                 <td>Veg</td>
                                                 <td>370</td>
                                                 <td>Sweet</td>
-                                                <td > <NavLink to="EditDish/" ><i class="fa-regular fa-pen-to-square fs-4"></i></NavLink>
+                                                <td > <NavLink to="EditDish/" style={{ color: 'black' }}><i class="fa-regular fa-pen-to-square fs-4"></i></NavLink>
                                                 <span class="material-icons-outlined fs-3">delete</span></td>
                                             </tr>
                                             <tr>
@@ -65,7 +70,7 @@ const Starters = () => {
                                                 <td>Veg</td>
                                                 <td>320</td>
                                                 <td>Medium Spicy</td>
-                                                <td > <NavLink to="EditDish/" ><i class="fa-regular fa-pen-to-square fs-4"></i></NavLink>
+                                                <td > <NavLink to="EditDish/" style={{ color: 'black' }}><i class="fa-regular fa-pen-to-square fs-4"></i></NavLink>
                                                 <span class="material-icons-outlined fs-3">delete</span></td>
                                             </tr>
                                             <tr>
@@ -76,7 +81,7 @@ const Starters = () => {
                                                 <td>Veg</td>
                                                 <td>370</td>
                                                 <td>Sweet</td>
-                                                <td > <NavLink to="EditDish/" ><i class="fa-regular fa-pen-to-square fs-4"></i></NavLink>
+                                                <td > <NavLink to="EditDish/" style={{ color: 'black' }}><i class="fa-regular fa-pen-to-square fs-4"></i></NavLink>
                                                 <span class="material-icons-outlined fs-3">delete</span></td>
                                             </tr>
                                             <tr>
@@ -87,7 +92,7 @@ const Starters = () => {
                                                 <td>Veg</td>
                                                 <td>320</td>
                                                 <td>Medium Spicy</td>
-                                                <td > <NavLink to="EditDish/" ><i class="fa-regular fa-pen-to-square fs-4"></i></NavLink>
+                                                <td > <NavLink to="EditDish/"style={{ color: 'black' }} ><i class="fa-regular fa-pen-to-square fs-4"></i></NavLink>
                                                 <span class="material-icons-outlined fs-3">delete</span></td>
                                             </tr>
                                             <tr>
@@ -98,7 +103,7 @@ const Starters = () => {
                                                 <td>Veg</td>
                                                 <td>370</td>
                                                 <td>Sweet</td>
-                                                <td > <NavLink to="EditDish/" ><i class="fa-regular fa-pen-to-square fs-4"></i></NavLink>
+                                                <td > <NavLink to="EditDish/"style={{ color: 'black' }} ><i class="fa-regular fa-pen-to-square fs-4"></i></NavLink>
                                                 <span class="material-icons-outlined fs-3">delete</span></td>
                                             </tr>
 

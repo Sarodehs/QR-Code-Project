@@ -13,10 +13,12 @@ import Contact from './Components/Pages/Contact';
 
 import EditRestaurantProfile from './Components/Setting/EditRestaurantProfile';
 import ManageCategory from './Components/Setting/ManageCategory';
+import AddCategory from './Components/Setting/AddCategory';
 import ChangeTheme from './Components/Setting/ChangeTheme';
 import ChangeFont from './Components/Setting/ChangeFont';
 import ChangePassword from './Components/Setting/ChangePassword';
 import GenerateQRCode from './Components/Setting/GenerateQRCode';
+import DownlodeQRCode from './Components/Setting/DownlodeQRCode';
 import AddBranch from './Components/Setting/AddBranch';
 
 import AddDish from './Components/Menu/AddDish';
@@ -58,12 +60,15 @@ function App() {
 
               <Route path='Setting/EditRestaurantProfile/' element={<EditRestaurantProfile />} />
               <Route path='Setting/ManageCategory/' element={<ManageCategory />} />
+              <Route path='Setting/ManageCategory/EditDish/' element={<EditDish />} />
+              <Route path='Setting/ManageCategory/AddCategory/' element={<AddCategory />} />
               <Route path='Setting/ChangeTheme/' element={<ChangeTheme />} />
               <Route path='Setting/ChangeFont/' element={<ChangeFont />} />
               <Route path='Setting/ChangePassword/' element={<ChangePassword />} />
               <Route path='Setting/GenerateQRCode/' element={<GenerateQRCode />} />
+              <Route path='Setting/GenerateQRCode/DownlodeQRCode/' element={<DownlodeQRCode />} />
               <Route path='Setting/AddBranch/' element={<AddBranch />} />
-            {/* </Route> */}
+  
             <Route path='Faq/' element={<Faq />} />
             <Route path='Contact/' element={<Contact />} />
           </Routes>

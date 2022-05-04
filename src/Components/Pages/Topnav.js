@@ -2,16 +2,16 @@ import React from "react";
 
 
 
-const Topnav = () =>  {
+const Topnav = () => {
     return (
-      
-            <>
-                <div className="container-fluid">
-                    <div >
+
+        <>
+            <div className="container-fluid">
+                <div >
                     {/* <!--top nav start --> */}
                     <nav className="navbar navbar-expand-md navbar-light w-100 topnavpadd">
                         <div className="navbar-nav  d-flex justify-content-center px-4">
-                            <a className="navbar-brand" href="/#"> <img src="../assets/images/logo.png" className="img-fluid w-75" alt="logo"/></a>
+                            <a className="navbar-brand" href="/#"> <img src="../assets/images/logo.png" className="img-fluid w-75" alt="logo" /></a>
                         </div>
                         <div className="text-end px-4" >
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -42,7 +42,7 @@ const Topnav = () =>  {
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <li><a className="dropdown-item" href="/#">Action</a></li>
                                         <li><a className="dropdown-item" href="/#">Another action</a></li>
-                                        
+
                                     </ul>
                                 </li>
                                 <li className="nav-item">
@@ -51,19 +51,26 @@ const Topnav = () =>  {
                             </ul>
                             <ul className="px-4 navbar-nav">
                                 <li className="nav-item d-flex justify-content-center align-items-center ">
-                                    <span className="material-icons-outlined px-4">notifications </span>
-                                    <img src="../assets/images/profile.png" className="img-fluid px-4 topborder" alt="profile"/>
+                                    <div className="position-relative ">
+                                        <span className="material-icons-outlined ">notifications </span>
+                                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-warning border border-light rounded-circle">
+                                            <span class="visually-hidden">New alerts</span>
+                                        </span>
+                                    </div>
+                                    <div className="px-4">
+                                    <img src="/assets/images/profile.png" className="img-fluid px-4 topborder" alt="profile" />
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </nav>
-               
+
                     {/* <!--top nav end --> */}
-                    </div>
                 </div>
-            </>
-        );
-    }
+            </div>
+        </>
+    );
+}
 
 
 export default Topnav;

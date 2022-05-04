@@ -1,7 +1,7 @@
 .html, body{
    width: 100% !important;
    height: 100% !important;   
-   overflow-x: hidden;
+   overflow-x: hidden !important;
    color: #2C1238;
    font-family: 'Poppins', sans-serif;
    display: -webkit-flex;   
@@ -13,10 +13,11 @@
 }
 .displayflex{
    display: flex;
+ /* width: 86vw; */
 }
 .contantfixwh{
    width: 90vw;
-   height: 130vh;
+   /* height: 130vh; */
 }
 @media screen and (max-width: 1024px){
    .contantfixwh{
@@ -25,20 +26,29 @@
    } 
 }
 .buttonfocuscolor{
-   color: #fff; 
+   color: #fff !important; 
    background-color: #FF7000;
    outline: none !important;
    outline-width: 0 !important;
    box-shadow: none !important;
-  
 }
-
+/* .buttonfocuscolor :hover{
+   background-color: #6dff50;
+} */
 .inputfocus{
    outline: none !important;
    outline-width: 0 !important;
    box-shadow: none !important;
    border-color: lightgray !important;
 }
+.cardshadow{
+   border: none !important;
+   background-color:#FFF;
+   box-shadow: 0 0 10px rgb(184, 181, 181);
+   border-radius: 10px;
+}
+
+
 /* top nav start */
 .topnavpadd{
    background-color:#FFF;
@@ -130,6 +140,12 @@
 
 /* dashboard card start */
 /* dashboard card one start */
+.cardbuttonfocus{
+   outline: none !important;
+   outline-width: 0 !important;
+   box-shadow: none !important;
+  
+}
 .cardoneshadow .card{
    border: none !important;
    background-color:#FFF;
@@ -157,17 +173,24 @@
    background-color:#FFF;
    box-shadow: 0 0 10px rgb(184, 181, 181);
    border-radius: 25px;
+  
 }
 .headingcardtwo{
    background-color: #fff;
+   
 }
-.headingcardtwo .nav-link {
+.headingcardtwo .nav-link{
    color: rgb(82, 81, 81);
-}
+  }
 .headingcardtwo .active{
     color: black !important;
     border-bottom: solid 1px black;
 }
+.headingcardtwo .main-nav-active1 {
+   color: black !important;
+    border-bottom: solid 1px black;
+}
+
 .cardtwoscroll {
    overflow: scroll;
    height: 780px;
@@ -186,33 +209,81 @@
 
 
 /* SettingNav start */
-.SettingNav{
-width: auto;
 
+.SettingNav {
+   width: auto;
+}
+.SettingNav ul  {
+   width: 100%;
+   padding: 0px ;
+   text-decoration: none !important;  
+}.SettingNav  li {
+  width: 100%;
+}
+.SettingNav  :hover :active {
+  
+   border-left: #B5876D 10px solid;
+   width: 100%;
+   color: #2C1238 !important;
+} 
+.SettingNav .nav-link {
+   color:#3e3d3e !important;
+   background: #ffffff !important;
+   border-left: #FEC592 10px solid;
+   border-radius: 10px;
+   height: 70px;
+   display: flex;
+   justify-content:left;
+   align-items:center;
+   text-decoration: none !important;
+}
+.SettingNav .active a{
+  
+   border-left: #B5876D 10px solid;
+   color: #2C1238 !important;
+    text-decoration: none;
+} 
+.SettingNav .main-nav-active {
+
+   border-left: #B5876D 10px solid;
+   color: #2C1238 !important;
+   text-decoration: none !important;
+}
+
+/* .SettingNav{
+width: auto;
 }
 .SettingNav ul{
    width: 100%;
    height: 100%;
-   padding-right: 2px;
    color: black!important;
 }
 .SettingNav li{
+   width: 100%;
+}
+.SettingNav a{
    border-left: #FEC592 10px solid;
    border-radius: 10px;
-   width: 100%;
-   height: 10%;
    background-color: #fff;
-   margin:5px;
    text-decoration: none;
-}
-.SettingNav  .hover .active{
-   color: black!important;
-   border-left: #B5876D 10px solid;
-} 
-.SettingNav  .active {
+   color: black !important;
+   height:30%;
+} */
+
+/* .SettingNav a .active {
    color: black !important;
    border-left: #B5876D 10px solid;
+   border: red solid 3px;
+
+
 }
+.SettingNav a .main-nav-active{
+   color: black !important;
+   border-left: #B5876D 10px solid !important; 
+   border: yellow solid 3px; 
+} */
+
+
 /* SettingNav end */
 
 

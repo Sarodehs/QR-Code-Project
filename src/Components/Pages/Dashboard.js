@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
+
 
 const Dashboard = () =>  {
         return (
@@ -29,7 +31,8 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <h5 className="d-flex">66<i className="material-icons-outlined">navigate_next</i></h5>
+                                                        <button href="" class="btn btn-gray  cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -50,7 +53,8 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <h5 className="d-flex">66<i className="material-icons-outlined">navigate_next</i></h5>
+                                                        <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -71,7 +75,8 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <h5 className="d-flex">66<i className="material-icons-outlined">navigate_next</i></h5>
+                                                        <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -92,7 +97,8 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <h5 className="d-flex">66<i className="material-icons-outlined">navigate_next</i></h5>
+                                                        <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -115,7 +121,8 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <h5 className="d-flex">66<i className="material-icons-outlined">navigate_next</i></h5>
+                                                        <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -136,7 +143,8 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <h5 className="d-flex">66<i className="material-icons-outlined">navigate_next</i></h5>
+                                                        <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -157,7 +165,8 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <h5 className="d-flex">66<i className="material-icons-outlined">navigate_next</i></h5>
+                                                        <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -178,14 +187,15 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <h5 className="d-flex">66<i className="material-icons-outlined">navigate_next</i></h5>
+                                                        <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="d-grid gap-2 col-xl-6 col-md-4 col-sm-4 mx-auto  mb-4" >
-                                    <button className="buttonadd">+ ADD NEW CATEGORY</button>
+                                      <button href="/" className="buttonadd">+ ADD NEW CATEGORY</button>
                                     </div>
                                 </div>
                             </div>
@@ -193,20 +203,20 @@ const Dashboard = () =>  {
                             {/* <!-- dashboard card two start --> */}
                             <div className="col-xl-6 col-md-12 col-sm-12 cardtwoshadow" >
                                 <div className="card1">
-                                    <div className="card-header headingcardtwo text-muted">
+                                    <div className="card-header headingcardtwo  text-muted">
                                         <ul className="nav nav-pills nav-justified card-header-pills ">
-                                            <li className="nav-item active">
+                                            <NavLink to="/"  style={{ textDecoration: 'none' }}> <li className="nav-item active">
                                                 <a className="nav-link " href="/#">Trending</a>
-                                            </li>
-                                            <li className="nav-item">
+                                            </li></NavLink>
+                                            <NavLink to="/"  style={{ textDecoration: 'none' }}> <li className="nav-item ">
                                                 <a className="nav-link " href="/#">Our Specialities</a>
-                                            </li>
-                                            <li className="nav-item">
+                                            </li></NavLink>
+                                            <NavLink to="/"  style={{ textDecoration: 'none' }}> <li className="nav-item">
                                                 <a className="nav-link " href="/#">Best Seller</a>
-                                            </li>
-                                            <li className="nav-item">
+                                            </li></NavLink>
+                                            <NavLink to="/"  style={{ textDecoration: 'none' }}><li className="nav-item">
                                                 <a className="nav-link " href="/#">Recommended</a>
-                                            </li>
+                                            </li></NavLink>
                                         </ul>
                                     </div>
                                     <div className="card-body cardtwoscroll" >

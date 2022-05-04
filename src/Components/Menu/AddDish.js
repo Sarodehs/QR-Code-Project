@@ -11,10 +11,13 @@ const AddDish = () => {
                         <div className="row p-4">
                             <div className="col-xl-6 col-md-6 col-sm-6 ">
                                 <h3>Add Dish</h3>
-                                <p className="d-flex">Add Dish
-                                    <span class="material-icons-outlined">chevron_right</span>
-                                    Starters
-                                </p>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                         <li class="breadcrumb-item active" aria-current="page">Add Dish</li>
+                                        <li class="breadcrumb-item"  ><a href="/"style={{ textDecoration: 'none' ,color: '#FF7000'}}>Starters</a></li>
+                                    </ol>
+                                </nav>
+                                
                             </div>
                             <div className="col-xl-6 col-md-6 col-sm-6 ">
                                 <div className=" col-xl-3 col-md-3 col-sm-2 mx-auto ">
@@ -30,7 +33,7 @@ const AddDish = () => {
                                 <div className="row g-0">
                                     <div className="col-md-3 col-xl-3  col-sm-3 ">
                                         <div className=" justify-content-center align-items-center d-flex p-4">
-                                        <img src="/assets/images/AddDishimg.png" className="img-fluid" alt="img"/>
+                                            <img src="/assets/images/AddDishimg.png" className="img-fluid" alt="img" />
                                         </div>
                                         <div className="d-grid justify-content-center align-items-center d-flex p-2">
                                             <button className="btn  buttonfocuscolor d-flex" type="button">
@@ -74,9 +77,9 @@ const AddDish = () => {
                                     </div>
                                 </div>
 
-                                
+
                             </div>
-                           
+
                         </div>
                         <div className="d-grid gap-2 col-xl-1 col-md-1 col-sm-1 mx-auto ">
                             <button className="btn buttonfocuscolor" type="button" >Save</button>
