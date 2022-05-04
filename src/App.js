@@ -11,7 +11,7 @@ import Register from './components/register';
 import Footer from './components/Footer';
 import Registernow from './components/registernow';
 import Monthly from './components/monthly';
-
+import Checkout from './components/checkout';
 
 
 function App() {
@@ -27,12 +27,8 @@ function App() {
           <Route path='pricing/' element={  <Pricing /> } />
           <Route path='contact/' element={  <ContactUs /> } />
           <Route path='login/' element={  <LogIn /> } />
-          <Route path='register/' element={ <Register />  }>
-
-            {/* <Route path='register/Registernow/' element={ <Registernow />  } /> */}
-          </Route>
-        
-          
+          <Route path='register/' element={ <Register />  }></Route>
+                  
         </Routes>
              
         <Routes>
@@ -41,6 +37,10 @@ function App() {
 
         <Routes>
           <Route path='pricing/monthly/' element={ <Monthly/> } />
+        </Routes>
+
+        <Routes>
+          <Route path='pricing/checkout/' element={ <Checkout/> }/>
         </Routes>
 
 

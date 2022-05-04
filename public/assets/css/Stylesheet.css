@@ -68,7 +68,11 @@ html,body
   color: black;
   text-decoration: none;
 }
-.routebar ul li a:hover
+.routebar ul li a  .active
+{
+  color: var(--main);
+}
+.routebar ul li a:hover 
 {
   color: var(--main);
 }
@@ -169,6 +173,15 @@ html,body
 #dropdownMenuButton1 ul
 {
   border: none;
+}
+
+.banner input
+{
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; 
 }
 
 
@@ -620,14 +633,14 @@ html,body
   height: 10rem;
   width: 66% !important;
   margin-bottom: -55%;
-  background-color: red;
+  /* background-color: red; */
 }
 .two
 {
   height: 12rem;
   margin-top: 30%;
   width: 63% !important;
-  background-color: #FF7000;
+  /* background-color: #FF7000; */
 }
 .three
 {
@@ -648,9 +661,18 @@ html,body
 {
   font-weight: 600;
 }
+.try input:focus
+{
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
 
 
-@media only screen  and (max-width:1200px)
+
+@media screen  and (max-width:1200px)
 {
   .try h2
   {
@@ -690,12 +712,12 @@ html,body
   
 }
 
-/*@media screen and (min-width:540px)
+@media only screen and (width:540px)
 {
   .try .one
   {
     width: 80%;
-    margin-bottom: -60%;
+    margin-bottom: -62%;
   }  
   .try .two
   {
@@ -708,7 +730,34 @@ html,body
     margin-top: -40%;
     height: 100% !important;
   } 
-} */
+}
+
+
+@media only screen and (width:280px)
+{
+  .try h2
+  {
+    padding-bottom: 30%;
+  }
+  .try .one
+  {
+    width: 80%;
+    margin-bottom: -160%;
+    height: 18rem;
+  }  
+  .try .two
+  {
+    width: 75%;
+    margin-top: 60%;
+    height: 20rem;
+  }
+  .try .three
+  {
+    width: 70%;
+    margin-top: -115%;
+    height: 100% !important;
+  } 
+}
 
 
 
@@ -1254,6 +1303,18 @@ html,body
     padding-top: 0% !important;
   }
 }
+
+
+
+
+
+/* checkout section css */
+
+.checkout .planmain .plansub ul
+{
+  list-style: none;
+}
+
 
 
 

@@ -45,7 +45,7 @@ const checkout = () => {
                                 {/* list part in sub card */}
                                 <div class="text-start provide">
 
-                                    <ul style="list-style: none;">
+                                    <ul>
 
                                         <li><span class="material-icons-outlined me-3">done</span>Custom QR code(25 QR codes)</li>
                                         <li><span class="material-icons-outlined me-3">done</span>Choose your own theme</li>
@@ -254,7 +254,7 @@ const checkout = () => {
 
                             </table>
 
-                            <a href="#" class="btn btn-sm mx-5 navbtn checkoutbtn"><i class="fa-solid fa-lock me-5"></i>Proceed to Checkout<i class="fa-solid fa-arrow-right mx-5"></i></a>
+                            <a href="/#" class="btn btn-sm mx-5 navbtn checkoutbtn"><i class="fa-solid fa-lock me-5"></i>Proceed to Checkout<i class="fa-solid fa-arrow-right mx-5"></i></a>
                         
                         </div>
                         {/* planpricing third card in second col starts */}
