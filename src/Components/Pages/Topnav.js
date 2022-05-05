@@ -53,7 +53,7 @@ const Topnav = () => {
                                 <li className="nav-item d-flex justify-content-center align-items-center ">
                                     <div className="position-relative ">
                                         <span className="material-icons-outlined ">notifications </span>
-                                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-warning border border-light rounded-circle">
+                                        <span class="position-absolute top- start-100 translate-middle p-1 bg-warning  rounded-circle">
                                             <span class="visually-hidden">New alerts</span>
                                         </span>
                                     </div>

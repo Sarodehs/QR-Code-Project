@@ -5,9 +5,7 @@ import Footer from './Components/Pages/Footer';
 import Topnav from './Components/Pages/Topnav';
 import Sidenav from './Components/Sidenav';
 
-
 import Dashboard from './Components/Pages/Dashboard';
-
 import Faq from './Components/Pages/Faq';
 import Contact from './Components/Pages/Contact';
 

@@ -4,8 +4,6 @@ import React from "react";
 const Footer = () => {
     return (
         <>
-
-
             {/* <!-- footer start --> */}
                 <footer className="footer footerbar-expand-lg footerbar-light d-flex footerback ">
                     <div className="container-fluid">

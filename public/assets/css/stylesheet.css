@@ -17,9 +17,9 @@
 }
 .contantfixwh{
    width: 90vw;
-   /* height: 130vh; */
+   height: 130vh;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1280px){
    .contantfixwh{
       width: 100%;
       height: 100%;
@@ -40,6 +40,7 @@
    outline-width: 0 !important;
    box-shadow: none !important;
    border-color: lightgray !important;
+  
 }
 .cardshadow{
    border: none !important;
@@ -47,7 +48,10 @@
    box-shadow: 0 0 10px rgb(184, 181, 181);
    border-radius: 10px;
 }
-
+.searchbar .form-select{
+   background-image: url("https://img.icons8.com/material-sharp/384/000000/search.png");
+   background-size: 20px 20px;
+}
 
 /* top nav start */
 .topnavpadd{
@@ -98,11 +102,7 @@
    color: white !important;
     text-decoration: none;
 } 
-.sidebar .main-nav-active {
-   background: #B5876D !important;
-   color: white !important;
-   text-decoration: none !important;
-}
+
 
 
 
@@ -128,12 +128,14 @@
 .sidebarmenu .active a{
    color: black !important;
 }
-/* .sidebarmenu .main-nav-active {
-   background: #B5876D !important;
-   color: white !important;
-   text-decoration: none !important;
-} */
-/* sidebar menu end */
+.menuarrow {
+   transform: rotate(0);
+ }
+ .menuarrow :hover{
+   transform: rotate(90deg);
+ }
+
+ /* sidebar menu end */
 /* side nav end */
 
 
@@ -186,7 +188,7 @@
     color: black !important;
     border-bottom: solid 1px black;
 }
-.headingcardtwo .main-nav-active1 {
+.headingcardtwo .main-nav-active {
    color: black !important;
     border-bottom: solid 1px black;
 }
@@ -220,7 +222,7 @@
 }.SettingNav  li {
   width: 100%;
 }
-.SettingNav  :hover :active {
+.SettingNav  :hover :active a{
   
    border-left: #B5876D 10px solid;
    width: 100%;
@@ -243,52 +245,24 @@
    color: #2C1238 !important;
     text-decoration: none;
 } 
-.SettingNav .main-nav-active {
-
-   border-left: #B5876D 10px solid;
-   color: #2C1238 !important;
-   text-decoration: none !important;
-}
-
-/* .SettingNav{
-width: auto;
-}
-.SettingNav ul{
-   width: 100%;
-   height: 100%;
-   color: black!important;
-}
-.SettingNav li{
-   width: 100%;
-}
-.SettingNav a{
-   border-left: #FEC592 10px solid;
-   border-radius: 10px;
-   background-color: #fff;
-   text-decoration: none;
-   color: black !important;
-   height:30%;
-} */
-
-/* .SettingNav a .active {
-   color: black !important;
-   border-left: #B5876D 10px solid;
-   border: red solid 3px;
-
-
-}
-.SettingNav a .main-nav-active{
-   color: black !important;
-   border-left: #B5876D 10px solid !important; 
-   border: yellow solid 3px; 
-} */
 
 
 /* SettingNav end */
 
 
-/* Faq start */
+/* Manage Category start */
+.form-check-input:checked {
+   background-color: #FF5D5D;
+}
+.form-switch .form-check-input:focus {
+ outline: none !important;
+ outline-width: 0 !important;
+ box-shadow: none !important;
+}
+/* Manage Category end */
 
+
+/* Faq start */
 .accordion-button::after{
    background-image: none !important; 
 }
@@ -314,16 +288,13 @@ width: auto;
    margin-top: 20px;
  }
 }
-
  .contactinput:focus{
   outline: none !important;
   outline-width: 0 !important;
   box-shadow: none !important;
   border-color: lightgray !important;
 }
-
 /* Contact Us end */
-
 
 
 /* footer start */
@@ -331,16 +302,3 @@ width: auto;
    background-color: #E9E9E9;
 }
 /* footer end */
-
-
-
-
-
-
-
-
-
-
-
-
-

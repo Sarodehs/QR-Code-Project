@@ -5,7 +5,7 @@ const Faq = () => {
     return (
         <>
             <div className="container-fluid displayflex  ">
-               <div className="row px-3">
+               <div className="row px-2">
                 {/* <!-- Content area start --> */}
                 <div className=" col-md-12 col-xl-12 col-sm-12 bg-light contantfixwh p-4 justify-content-center " >
                     <div className="row p-4">
@@ -18,7 +18,7 @@ const Faq = () => {
                                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                             <div className="col-xl-10 col-md-8"><span className="material-icons px-4">arrow_drop_down</span> How can I add images of food?</div>
                                             <div className="col-xl-1 col-md-2"><span className="material-icons-outlined">thumb_up_alt</span></div>
-                                            <div className="col-xl-1 col-md-2"><span className="material-icons-outlined #orange600">thumb_down</span></div>
+                                            <div className="col-xl-1 col-md-2 text-muted"><span className="material-icons-outlined ">thumb_down</span></div>
                                         </button>
                                     </h2>
                                     <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne"
@@ -33,7 +33,7 @@ const Faq = () => {
                                             data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                             <div className="col-xl-10 col-md-8"><span className="material-icons px-4">arrow_drop_down</span> How do you support your Customer?</div>
                                             <div className="col-xl-1 col-md-2"><span className="material-icons-outlined">thumb_up_alt</span></div>
-                                            <div className="col-xl-1 col-md-2"><span className="material-icons-outlined">thumb_down</span></div>
+                                            <div className="col-xl-1 col-md-2 text-muted"><span className="material-icons-outlined">thumb_down</span></div>
                                         </button>
                                     </h2>
                                     <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
@@ -47,7 +47,7 @@ const Faq = () => {
                                             data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                             <div className="col-xl-10 col-md-8"><span className="material-icons px-4">arrow_drop_down</span>How can I add or delete Items?</div>
                                             <div className="col-xl-1 col-md-2"><span className="material-icons-outlined">thumb_up_alt</span></div>
-                                            <div className="col-xl-1 col-md-2"><span className="material-icons-outlined">thumb_down</span></div>
+                                            <div className="col-xl-1 col-md-2 text-muted"><span className="material-icons-outlined">thumb_down</span></div>
                                         </button>
                                     </h2>
                                     <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree"
@@ -62,7 +62,7 @@ const Faq = () => {
                                             data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                                             <div className="col-xl-10 col-md-8"><span className="material-icons px-4">arrow_drop_down</span> Can I change the logo of the restaurant?</div>
                                             <div className="col-xl-1 col-md-2"><span className="material-icons-outlined">thumb_up_alt</span></div>
-                                            <div className="col-xl-1 col-md-2"><span className="material-icons-outlined">thumb_down</span></div>
+                                            <div className="col-xl-1 col-md-2 text-muted"><span className="material-icons-outlined">thumb_down</span></div>
                                         </button>
                                     </h2>
                                     <div id="flush-collapseFour" className="accordion-collapse collapse" aria-labelledby="flush-headingFour"
@@ -77,7 +77,7 @@ const Faq = () => {
                                             data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                                             <div className="col-xl-10 col-md-8"><span className="material-icons px-4">arrow_drop_down</span>Where can I see my most trending or my best selling items?</div>
                                             <div className="col-xl-1 col-md-2"><span className="material-icons-outlined">thumb_up_alt</span></div>
-                                            <div className="col-xl-1 col-md-2"><span className="material-icons-outlined">thumb_down</span></div>
+                                            <div className="col-xl-1 col-md-2 text-muted"><span className="material-icons-outlined">thumb_down</span></div>
                                         </button>
                                     </h2>
                                     <div id="flush-collapseFive" className="accordion-collapse collapse" aria-labelledby="flush-headingFive"
@@ -91,7 +91,7 @@ const Faq = () => {
                                             data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
                                             <div className="col-xl-10 col-md-8"><span className="material-icons px-4">arrow_drop_down</span>How can I change my Password?</div>
                                             <div className="col-xl-1 col-md-2"><span className="material-icons-outlined">thumb_up_alt</span></div>
-                                            <div className="col-xl-1 col-md-2"><span className="material-icons-outlined">thumb_down</span></div>
+                                            <div className="col-xl-1 col-md-2 text-muted"><span className="material-icons-outlined">thumb_down</span></div>
                                         </button>
                                     </h2>
                                     <div id="flush-collapseSix" className="accordion-collapse collapse" aria-labelledby="flush-headingSix"

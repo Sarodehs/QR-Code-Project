@@ -4,7 +4,7 @@ const SettingNav = ({ children }) => {
     return (
         <>
            <div className="container-fluid displayflex ">
-                <div className="row px-3">
+                <div className="row px-2">
                     {/* <!-- Content area start --> */}
                     <div className=" col-md-12 col-xl-12 col-sm-12 bg-light contantfixwh  justify-content-center " >
 

@@ -6,7 +6,7 @@ const Dashboard = () =>  {
         return (
             <>
             <div className="container-fluid displayflex ">
-                <div className="row px-3">
+                <div className="row px-2">
 
                     {/* <!-- Content area start --> */}
                     <div className="col-auto col-md-12 col-xl-12 col-sm-12 bg-light  justify-content-center p-4" >
@@ -15,6 +15,7 @@ const Dashboard = () =>  {
                             <div className="col-xl-6 col-md-12 col-sm-12 cardoneshadow">
                                 <div className="row">
                                     <div className="col-xl-6 col-md-6 col-sm-6">
+
                                         <div className="card mb-3 p-2 ">
                                             <h5>Starters</h5>
                                             <div className="row g-0 ">
@@ -31,12 +32,13 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <button href="" class="btn btn-gray  cardbuttonfocus" ><h5 className="d-flex">66
-                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
+                                                        <NavLink to="Menu/Starters/"><button href="" class="btn btn-gray  cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div className="card mb-3 p-2">
                                             <h5>Curries</h5>
                                             <div className="row g-0 ">
@@ -53,12 +55,13 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
-                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
+                                                        <NavLink to="Menu/Curries/"> <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div className="card mb-3 p-2">
                                             <h5>Soups</h5>
                                             <div className="row g-0 ">
@@ -75,12 +78,13 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
-                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
+                                                        <NavLink to="Menu/Soups/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div className="card mb-3 p-2">
                                             <h5>Drinks</h5>
                                             <div className="row g-0 ">
@@ -97,13 +101,14 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
-                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
+                                                        <NavLink to="Menu/Drinks/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div className="col-xl-6 col-md-6 col-sm-6">
                                         <div className="card mb-3 p-2">
                                             <h5>Desserts</h5>
@@ -121,12 +126,13 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
-                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
+                                                        <NavLink to="Menu/Dessert/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div className="card mb-3 p-2">
                                             <h5>Shakes</h5>
                                             <div className="row g-0 ">
@@ -143,12 +149,13 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
-                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
+                                                        <NavLink to="Menu/Shakes/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div className="card mb-3 p-2">
                                             <h5>Rice & Biriyani</h5>
                                             <div className="row g-0 ">
@@ -165,12 +172,13 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
-                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
+                                                        <NavLink to="Menu/RiceBiriyani/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div className="card mb-3 p-2">
                                             <h5>Special</h5>
                                             <div className="row g-0 ">
@@ -187,16 +195,18 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
-                                                        <i className="material-icons-outlined">navigate_next</i></h5></button>
+                                                        <NavLink to="Menu/Special/">  <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div className="d-grid gap-2 col-xl-6 col-md-4 col-sm-4 mx-auto  mb-4" >
                                       <button href="/" className="buttonadd">+ ADD NEW CATEGORY</button>
                                     </div>
+
                                 </div>
                             </div>
                             {/* <!-- dashboard card one end --> */}
@@ -204,20 +214,22 @@ const Dashboard = () =>  {
                             <div className="col-xl-6 col-md-12 col-sm-12 cardtwoshadow" >
                                 <div className="card1">
                                     <div className="card-header headingcardtwo  text-muted">
-                                        <ul className="nav nav-pills nav-justified card-header-pills ">
-                                            <NavLink to="/"  style={{ textDecoration: 'none' }}> <li className="nav-item active">
+                                        <div className={({isActive}) => (isActive ? 'main-nav-active': 'inactive')}>
+                                        <ul className="nav nav-pills nav-justified card-header-pills " >
+                                             <li className="nav-item active"><NavLink to="/"  style={{ textDecoration: 'none' }}>
                                                 <a className="nav-link " href="/#">Trending</a>
-                                            </li></NavLink>
-                                            <NavLink to="/"  style={{ textDecoration: 'none' }}> <li className="nav-item ">
+                                                </NavLink> </li>
+                                            <li className="nav-item "> <NavLink to="/"  style={{ textDecoration: 'none' }}>
                                                 <a className="nav-link " href="/#">Our Specialities</a>
-                                            </li></NavLink>
-                                            <NavLink to="/"  style={{ textDecoration: 'none' }}> <li className="nav-item">
+                                                </NavLink> </li>
+                                            <li className="nav-item"> <NavLink to="/"  style={{ textDecoration: 'none' }}>
                                                 <a className="nav-link " href="/#">Best Seller</a>
-                                            </li></NavLink>
-                                            <NavLink to="/"  style={{ textDecoration: 'none' }}><li className="nav-item">
+                                                </NavLink></li>
+                                            <li className="nav-item"><NavLink to="/"  style={{ textDecoration: 'none' }}>
                                                 <a className="nav-link " href="/#">Recommended</a>
-                                            </li></NavLink>
+                                                </NavLink></li>
                                         </ul>
+                                        </div>
                                     </div>
                                     <div className="card-body cardtwoscroll" >
                                         <div className="card mb-3">
