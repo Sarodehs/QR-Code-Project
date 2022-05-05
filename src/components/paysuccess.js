@@ -9,8 +9,8 @@ const paysuccess = () => {
             {/* paysuccess starts */}
             <div class="text-center mt-5 pt-5 paysuccess">
 
-                <span class="material-icons-outlined paysuccesstick" style="font-size: 15rem;">check_circle</span>
-                <h2 class="mt-4 mb-4 paysuccesstick">Awesome !</h2>
+                <span class="material-icons-outlined paysuccesstick" >check_circle</span>
+                <h2 class="mt-4 mb-4">Awesome !</h2>
                 <p>Payment was Successful</p>
 
             </div>

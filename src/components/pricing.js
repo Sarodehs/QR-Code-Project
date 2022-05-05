@@ -118,7 +118,7 @@ const pricing = () => {
                                     <i class="fa fa-check pe-3" aria-hidden="true"></i>Custom QR code(25 QR codes)<br/>
                                     <i class="fa fa-check pe-3" aria-hidden="true"></i>Choose your own theme<br/>
                                     <i class="fa fa-check pe-3" aria-hidden="true"></i>24*7 customer support<br/><br/><br/>
-                                    <Link to="checkout/"><button type="button" class="btn btn-sm px-5 pe-5 silbtn">Chooose</button></Link>
+                                    <Link to="/pricing/checkout/"><button type="button" class="btn btn-sm px-5 pe-5 silbtn">Chooose</button></Link>
                                     </li> 
                                 
                                 </ul>

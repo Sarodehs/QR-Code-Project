@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const payment = () =>{
     return(
@@ -12,10 +13,10 @@ const payment = () =>{
                 <h2 class="mb-5 mt-4 pt-4 text-center">Payment</h2>
 
                 {/* payment card starts */}
-                <div class="card pb-5 mb-5 paymentcard">
+                <div class="card pb-5 mb-5 paymentcardmain">
 
                     {/* form starts */}
-                    <form class="mx-5">
+                    <form class="mx-5 mt-4">
 
                         {/* radio buttons part starts */}
                         <div>
@@ -62,7 +63,7 @@ const payment = () =>{
                                 <div class="col-xl-5 col-md-10 col-sm-10">
 
                                     {/* validity */}
-                                    <div>
+                                    <div class="paymentinput">
                                         <label for="exampleInputMonth" class="form-label">Validity</label>
                                         <input type="month" class="form-control" id="exampleInputMonth"/>
                                     </div>
@@ -74,7 +75,7 @@ const payment = () =>{
                                 <div class="col-xl-4 col-md-8 col-sm-8">
 
                                     {/* cvv */}
-                                    <div>
+                                    <div class="paymentinput">
                                         <label for="exampleInputNo" class="form-label">CVV</label>
                                         <input type="number" class="form-control" id="exampleInputNo"/>
                                     </div>
@@ -90,7 +91,7 @@ const payment = () =>{
                                 <div class="col-xl-3 col-md-6 col-sm-12">
 
                                     {/* remember card checkbox */}
-                                    <div class="form-check">
+                                    <div class="form-check mb-3">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
                                         <label class="form-check-label" for="flexCheckDefault">Remember Card</label>
                                     </div>
@@ -98,18 +99,18 @@ const payment = () =>{
                                 </div>
 
                                 {/* mastercard */}
-                                <div class="col-xl-1 col-md-2 col-sm-4">
-                                    <img src="./Images/MasterCard.png" alt="mastercard"/>
+                                <div class="col-xl-1 col-md-2 col-sm-4 mb-3">
+                                    <img src="/assets/images/MasterCard.png" alt="mastercard"/>
                                 </div>
 
                                 {/* visa */}
-                                <div class="col-xl-1 col-md-2 col-sm-4">
-                                    <img src="./Images/visa.png" alt="visa"/>
+                                <div class="col-xl-1 col-md-2 col-sm-4 mb-3">
+                                    <img src="/assets/images/visa.png" alt="visa"/>
                                 </div>
 
                                 {/* rupay */}
-                                <div class="col-xl-1 col-md-2 col-sm-4 me-5">
-                                    <img src="./Images/rupay.png" alt="rupay"/>
+                                <div class="col-xl-1 col-md-2 col-sm-4 me-5 mb-3">
+                                    <img src="/assets/images/rupay.png" alt="rupay"/>
                                 </div>
 
                                 {/* ssl secured */}
@@ -123,7 +124,16 @@ const payment = () =>{
                         </div>
                         {/* sub form ends */}
 
-                        <a href="/#" class="btn mb-5 mt-3 text-center navbtn paymentcheckout"><i class="fa-solid fa-lock me-5 mx-4"></i>Secure Checkout<i class="fa-solid fa-arrow-right mx-5 me-2"></i></a>
+                        {/* secure checkout button */}
+                        <div class="row">
+                            <Link to="/pricing/checkout/payment/paysuccess/" class="btn mb-4 navbtn paymentcheckout">
+
+                                <div class="col-xl-1"><i class="fa-solid fa-lock"></i></div>
+                                <div class="col-xl-8">Secure Checkout</div>
+                                <div class="col-xl-1"><i class="fa-solid fa-arrow-right"></i></div>
+
+                            </Link>
+                        </div>
 
                     </form>
                     {/* form ends */}

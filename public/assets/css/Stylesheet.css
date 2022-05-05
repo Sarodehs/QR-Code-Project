@@ -8,16 +8,12 @@ html,body
   overflow-x: hidden;
 }
 
-
-
 /* root css */
 
 :root
 {
   --main: #FF7000;
 }
-
-
 
 /* css to whole part */
 
@@ -29,7 +25,35 @@ html,body
   font-family: 'Poppins', sans-serif;
 }
 
+/* two main hovered btn */
 
+/* btn with bgcolor orange */
+
+.navbtn
+{
+  background-color: var(--main);
+  color: #fff;
+}
+.navbtn:hover
+{
+  border-color: var(--main);
+  color: var(--main) !important;
+  background-color: #fff;
+}
+
+/* btn with bgcolor white */
+
+.silbtn
+{
+  border-color: var(--main);
+  color: var(--main);
+  text-align: center;
+}
+.silbtn:hover
+{
+  background-color: var(--main);
+  color: white;
+}
 
 /* css to remove shadow from buttons */
 
@@ -80,6 +104,10 @@ html,body
 {
   color: var(--main) !important;
 }
+.routebar .main-nav-active
+{
+  color:  var(--main);
+}
 .routebar .navbar-toggler:focus
 {
   outline: none !important;
@@ -88,41 +116,6 @@ html,body
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }
-
-
-
-/* two main hovered btn */
-
-
-/* btn with bgcolor orange */
-
-.navbtn
-{
-  background-color: var(--main);
-  color: #fff;
-}
-.navbtn:hover
-{
-  border-color: var(--main);
-  color: var(--main) !important;
-  background-color: #fff;
-}
-
-
-/* btn with bgcolor white */
-
-.silbtn
-{
-  border-color: var(--main);
-  color: var(--main);
-  text-align: center;
-}
-.silbtn:hover
-{
-  background-color: var(--main);
-  color: white;
-}
-
 
 
 
@@ -212,15 +205,15 @@ html,body
 
 /* scan menu part */
 
-.qrmenu
+.scanmenu .qrmenu
 {
   margin-top: 18%;
 }
-.scanqr
+.scanmenu .scanqr
 {
   margin-top: 10%;
 }
-.openmenu
+.scanmenu .openmenu
 {
   margin-top: 5%;
 }
@@ -550,7 +543,7 @@ html,body
   {
     padding-top: 0% !important;
   }
-  .wculist
+  .wcu .wculist
   {
     text-align: left;
     margin-left: 0% !important;
@@ -792,6 +785,14 @@ html,body
   margin-top: -22%;
   background-color: #B5876D;
   color: white;
+}
+.popularbtn:focus
+{
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
 }
 .yearly i
 {
@@ -1313,6 +1314,170 @@ html,body
 .checkout .planmain .plansub ul
 {
   list-style: none;
+}
+.checkout
+{
+  background-color: #FFF5EA;
+}
+.checkout .planmain
+{
+  width: 90%;
+  box-shadow: 0 0 2px rgb(128,128,128);
+}
+.checkout .planmain .plansub
+{
+  width: 70%;
+  box-shadow: 0 0 10px rgb(128, 118, 118);
+  margin-left: 15% !important;
+}
+.checkout .planmain .plansub.siltext
+{
+  color: #B5876D;
+}
+.checkout .planmain .plansub .silspan
+{
+  font-size: 50px;
+}
+.checkout .planmain .plansub .provide ul li
+{
+  line-height: 250%;
+}
+.checkout .userinfo
+{
+  width: 90%;
+}
+.checkout .userinfo .editicon
+{
+  color: var(--main);
+  font-size: 25px !important;
+}
+.checkout .plandetails
+{
+  width: 90%;
+}
+.checkout .planprice
+{
+  width: 90%;
+}
+.checkout .planprice table
+{
+  width: 60%;
+  margin-left: 20% !important;
+}
+.checkout .planprice .checkoutbtn
+{
+  width: 50%;
+  margin-left: 20% !important;
+  display: flex;
+  justify-content: space-around;
+}
+.checkout .planprice .total
+{
+  padding-left: 25%;
+}
+
+
+
+/* media query for checkout section */
+
+.checkout .planmain
+{
+  width: 80%;
+  margin-left: 5% !important;
+}
+.checkout .planmain .plansub
+{
+  width: 70%;
+}
+.checkout .userinfo
+{
+  width: 80%;
+  margin-left: 5% !important;
+}
+.checkout .plandetails
+{
+  width: 80%;
+  margin-left: 5% !important; 
+}
+.checkout .plandetails input
+{
+  width: 75%;
+}
+.checkout .planprice
+{
+  width: 80%;
+  margin-left: 5% !important; 
+  margin-bottom: 10% !important;
+}
+
+
+
+
+
+/* payment section css */
+
+.payment
+{
+  background-color: #FFF5EA;
+}
+.payment .paymentcardmain
+{
+  width: 60%;
+  margin-left: 20%;
+}
+.payment  .paymentcardmain .paymentcheckout
+{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 25% !important;
+}
+.payment .paymentcardmain input:focus
+{
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; 
+}
+
+
+
+/* media query for payment section */
+
+@media screen and (max-width:1200px)
+{
+  .payment .paymentcardmain
+  {
+    width: 80% !important;
+    margin-left: 8% !important;
+  }
+  .payment .paymentcardmain .paymentcheckout
+  {
+    width: 70%;
+    margin-left: 12% !important;
+  }
+  .payment .paymentcardmain .paymentinput
+  {
+    width: 90%;
+  }
+}
+
+
+
+
+
+/* paysuccess section css */
+
+.paysuccess .paysuccesstick
+{
+  color: rgb(3, 168, 3);
+  font-size: 15rem;
+}
+.paysuccess h2
+{
+  color: rgb(3, 168, 3);
 }
 
 

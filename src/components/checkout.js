@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 const hrstyle ={
     width: "50%",
     margin: '13% !important'
@@ -13,7 +16,7 @@ const checkout = () => {
             {/* checkout starts */}
             <div class="mb-5 checkout">
 
-                <h2 class="p-4 mx-5">Checkout</h2>
+                <h2 class="p-4 mx-5"><b>Checkout</b></h2>
 
                 {/* main row starts */}
                 <div class="row">
@@ -77,7 +80,7 @@ const checkout = () => {
                     <div class="col-xl-6">
 
                         {/* userinfo first card in second col starts*/}
-                        <div class="card mb-5 mx-5 userinfo">
+                        <div class="card mb-5 mx-5 mt-5 userinfo">
 
                             {/* ul in userinfo starts */}
                             <ul class="list-group">
@@ -85,7 +88,7 @@ const checkout = () => {
                                 {/* first li containing name starts */}
                                 <li class="list-group-item">
 
-                                    <div class="row px-2">
+                                    <div class="row px-2 mt-4">
 
                                         <div class="col-xl-2"><h6>Name</h6></div>
                                         <div class="col-xl-7">Kunal Balkrushna Nemade</div>
@@ -113,7 +116,7 @@ const checkout = () => {
                                 {/* third li containing phone starts */}
                                 <li class="list-group-item">
 
-                                    <div class="row px-2">
+                                    <div class="row px-2 mb-3">
 
                                         <div class="col-xl-2"><h6>Phone</h6></div>
                                         <div class="col-xl-7">+91 98653 78451</div>
@@ -131,7 +134,7 @@ const checkout = () => {
                         {/* userinfo first card in second col ends*/}
 
                         {/* plandetails second card in second col starts */}
-                        <div class="card mb-5 mx-5 plandetails">
+                        <div class="card mb-5 mx-5 mt-5 plandetails">
 
                             {/* ul in plandetails starts */}
                             <ul class="list-group">
@@ -139,7 +142,7 @@ const checkout = () => {
                                 {/* first li cointaining selected plan starts */}
                                 <li class="list-group-item">
 
-                                    <div class="row px-4">
+                                    <div class="row px-4 mt-4">
 
                                         <div class="col-xl-4"><p><small class="text-muted">Selected Subscription</small></p></div>
                                         <div class="col-xl-6"><h5>Monthly Silver Plan</h5></div>
@@ -192,7 +195,7 @@ const checkout = () => {
                                         {/* col for apply button */}
                                         <div class="col-xl-2">
 
-                                            <button type="button" class="btn btn-sm px-4 mt-5 navbtn">APPLY</button>
+                                            <button type="button" class="btn btn-sm px-4 mt-5 mb-4 navbtn">APPLY</button>
                                         
                                         </div>
                                         {/* col for apply button ends */}
@@ -210,9 +213,9 @@ const checkout = () => {
                         {/* plandetails second card in second col ends */}
 
                         {/* planpricing third card in second col starts */}
-                        <div class="card mx-5 pb-4 planprice">
+                        <div class="card mx-5 pb-5 pt-4 mt-5 planprice">
 
-                            <h5 class="p-3">Order Summary</h5>
+                            <h5 class="p-3 mx-5"><b>Order Summary</b></h5>
 
                             <table class="mx-5">
 
@@ -254,7 +257,16 @@ const checkout = () => {
 
                             </table>
 
-                            <a href="/#" class="btn btn-sm mx-5 navbtn checkoutbtn"><i class="fa-solid fa-lock me-5"></i>Proceed to Checkout<i class="fa-solid fa-arrow-right mx-5"></i></a>
+                            {/* proceed to checkout button */}
+                            <div class="row">
+                                <Link to="/pricing/checkout/payment/" class="btn btn-sm mx-5 mb-4 navbtn checkoutbtn">
+
+                                    <div class="col-xl-1"><i class="fa-solid fa-lock"></i></div>
+                                    <div class="col-xl-8">Proceed to Checkout</div>
+                                    <div class="col-xl-1"><i class="fa-solid fa-arrow-right"></i></div>
+
+                                </Link>
+                            </div>
                         
                         </div>
                         {/* planpricing third card in second col starts */}

@@ -12,6 +12,8 @@ import Footer from './components/Footer';
 import Registernow from './components/registernow';
 import Monthly from './components/monthly';
 import Checkout from './components/checkout';
+import Payment from './components/payment';
+import Paysuccess from './components/paysuccess';
 
 
 function App() {
@@ -24,10 +26,11 @@ function App() {
 
         <Routes>
           <Route path='/' element={ <Home />  } />
-          <Route path='pricing/' element={  <Pricing /> } />
-          <Route path='contact/' element={  <ContactUs /> } />
-          <Route path='login/' element={  <LogIn /> } />
-          <Route path='register/' element={ <Register />  }></Route>
+          <Route path='/pricing/' element={  <Pricing /> } />
+          <Route path='/contact/' element={  <ContactUs /> } />
+          <Route path='/login/' element={  <LogIn /> } />
+          <Route path='/register/' element={ <Register />  }></Route>
+          {/* <Route element={  < PageNotFound/> }></Route> */}
                   
         </Routes>
              
@@ -40,7 +43,15 @@ function App() {
         </Routes>
 
         <Routes>
-          <Route path='pricing/checkout/' element={ <Checkout/> }/>
+          <Route path='/pricing/checkout/' element={ <Checkout/> }/>
+        </Routes>
+
+        <Routes>
+          <Route path='/pricing/checkout/payment/' element={ <Payment/> }/>
+        </Routes>
+
+        <Routes>
+          <Route path='/pricing/checkout/payment/paysuccess/' element={ <Paysuccess/> }/>
         </Routes>
 
 
