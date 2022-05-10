@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Menu from "./Menu";
 import Footer from "./Footer";
+import ReactPlayer from "react-player";
 
 const home = () => {
 
@@ -11,122 +12,142 @@ const home = () => {
         {/* container fluid starts */}
         <div className="container-fluid">
 
-            <Menu />
-
             {/* <!-- banner starts --> */}
-            <div className="banner mt-3 mb-5">
+            <div class="homebanner">
 
-                {/* main row starts */}
-                <div className="row mt-5">
+                {/* card starts */}
+                <div class="card bg-dark text-white">
 
-                    {/* first col in main row starts */}
-                    <div className="col-xl-3 col-md-6 col-sm-6 px-5 mx-5 bannerleft">
-
-                        <h1 className="mt-5 contactless">Contactless</h1>
-                        <h3 className="mt-4">QR Code Menus</h3>
-                        <p className="mt-4 text-muted">You serve your customers.<br/>We serve you.</p>
-                        <a href="/#" className="btn btn-sm px-4 pe-4 mt-5 navbtn">GET FREE DEMO</a>
-                        <a href="/#" className="btn btn-sm px-4 pe-4 mt-5">PRICING</a>
-                    
-                    </div>
-                    {/* first col in main row ends */}
-
-                    {/* second col in main row starts */}
-                    <div className="col-xl-1  col-md-2 col-sm-4 mt-5 pt-5">
-
-                        <img src="../assets/images/downarrow.png" className="homebannerdownarrow" height="110px" width="90%" alt="downarrow"/>
-                    
-                    </div>
-                    {/* second col in main row ends */}
-
-                    {/* third col in main row starts */}
-                    <div className="col-xl-5  col-md-10 col-sm-10 mt-5 pt-5 bannerright">
-
-                        <div className="row">
-
-                            <div className="col-md-2"></div>
-
-                            <div className="col-md-3 cust">
-
-                                <p>Trusted By</p>
-                                <h1 className="number">167+</h1>
-                                <p><small>Customers</small></p>
-                            
-                            </div>
-
-                            <div className="col-md-5">
-
-                                <p>In</p>
-                                <h1 className="number">13+</h1>
-                                <p><small>Cities</small></p>
-                            
-                            </div>
-
-                        </div>
+                    <ReactPlayer url="../assets/images/bannervideo.mp4" type="video/mp4" muted playing="true" loop="true" height="100%" width="100%" className="bannervideo" />
                         
-                        {/* cities starts */}
-                        <div id="cities">  
-                            
-                            {/* dropdown starts */}
-                            <div className="dropdown mx-5 mt-5">
+                        {/* card overlay starts */}
+                        <div class="card-img-overlay">
 
-                                {/* dropdown button */}
-                                <button className="btn btn-sm text-muted mx-5" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                  We Served in<span className="material-icons-outlined mx-2 homebtnarrow">chevron_right</span>
-                                </button>
+                            {/* text over banner starts */}
+                            <div className="banner text-white">
 
-                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                {/* main row starts */}
+                                <div className="row d-flex justify-content-center">
 
-                                  <li><p><small className="mx-3 text-muted">Selected City</small></p></li>
+                                    <Menu />
 
-                                  <li><a className="dropdown-item" href="/#">
-                                    <div className="form-check">
-                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                                        <label className="form-check-label" for="flexRadioDefault1"><small className="text-muted">Pune</small></label>
+                                    {/* first col in main row starts */}
+                                    <div className="col-xl-4 col-md-6 col-sm-6 bannerleft">
+
+                                        <h1 className="mt-5 contactless">Contactless</h1>
+                                        <h3 className="mt-4">QR Code Menus</h3>
+                                        <p className="mt-4 text-muted text-white">You serve your customers.<br/>We serve you.</p>
+                                        <a href="/#" className="btn btn-sm px-4 pe-4 mt-5 navbtn">GET FREE DEMO</a>
+                                        <a href="/#" className="btn btn-sm px-4 pe-4 mt-5 mx-4 text-white btn-outline-light bannerpricing">PRICING</a>
+                                    
                                     </div>
-                                  </a></li>
+                                    {/* first col in main row ends */}
 
-                                  <li><a className="dropdown-item" href="/#">
-                                    <div className="form-check">
-                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                                        <label className="form-check-label" for="flexRadioDefault1"><small className="text-muted">Mumbai</small></label>
-                                    </div>
-                                  </a></li>
+                                    {/* second col in main row starts */}
+                                    <div className="col-xl-2  col-md-2 col-sm-4">
 
-                                  <li><a className="dropdown-item" href="/#">
-                                    <div className="form-check">
-                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                                        <label className="form-check-label" for="flexRadioDefault1"><small className="text-muted">Nashik</small></label>
+                                        <img src="../assets/images/downarrow.png" className="homebannerdownarrow" height="110px" width="90%" alt="downarrow"/>
+                                    
                                     </div>
-                                  </a></li>
+                                    {/* second col in main row ends */}
 
-                                  <li><a className="dropdown-item" href="/#">
-                                    <div className="form-check">
-                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                                        <label className="form-check-label" for="flexRadioDefault1"><small className="text-muted">Kolhapur</small></label>
-                                    </div>
-                                  </a></li>
+                                    {/* third col in main row starts */}
+                                    <div className="col-xl-5  col-md-10 col-sm-10 bannerright">
 
-                                  <li><a className="dropdown-item" href="/#">
-                                    <div className="form-check">
-                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                                        <label className="form-check-label" for="flexRadioDefault1"><small className="text-muted">Banglore</small></label>
+                                        <div className="row">
+
+                                            <div className="col-md-2"></div>
+
+                                            <div className="col-md-3 cust">
+
+                                                <p>Trusted By</p>
+                                                <h1 className="number">167+</h1>
+                                                <p><small>Customers</small></p>
+                                            
+                                            </div>
+
+                                            <div className="col-md-5">
+
+                                                <p>In</p>
+                                                <h1 className="number">13+</h1>
+                                                <p><small>Cities</small></p>
+                                            
+                                            </div>
+
+                                        </div>
+                                        
+                                        {/* cities starts */}
+                                        <div id="cities">  
+                                            
+                                            {/* dropdown starts */}
+                                            <div className="dropdown mx-5 mt-5">
+
+                                                {/* dropdown button */}
+                                                <button className="btn btn-sm text-muted mx-5 text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                We Served in<span className="material-icons-outlined mx-2 homebtnarrow">chevron_right</span>
+                                                </button>
+
+                                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                                                <li><p><small className="mx-3 text-muted">Selected City</small></p></li>
+
+                                                <li><a className="dropdown-item" href="/#">
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                                                        <label className="form-check-label" for="flexRadioDefault1"><small className="text-muted">Pune</small></label>
+                                                    </div>
+                                                </a></li>
+
+                                                <li><a className="dropdown-item" href="/#">
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                                                        <label className="form-check-label" for="flexRadioDefault1"><small className="text-muted">Mumbai</small></label>
+                                                    </div>
+                                                </a></li>
+
+                                                <li><a className="dropdown-item" href="/#">
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                                                        <label className="form-check-label" for="flexRadioDefault1"><small className="text-muted">Nashik</small></label>
+                                                    </div>
+                                                </a></li>
+
+                                                <li><a className="dropdown-item" href="/#">
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                                                        <label className="form-check-label" for="flexRadioDefault1"><small className="text-muted">Kolhapur</small></label>
+                                                    </div>
+                                                </a></li>
+
+                                                <li><a className="dropdown-item" href="/#">
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                                                        <label className="form-check-label" for="flexRadioDefault1"><small className="text-muted">Banglore</small></label>
+                                                    </div>
+                                                </a></li>
+                                                
+                                                </ul>
+
+                                            </div>
+                                            {/* dropdown ends */}
+
+                                        </div>
+                                        {/* cities ends */}
+
                                     </div>
-                                  </a></li>
-                                  
-                                </ul>
+                                    {/* third col in main row ends */}
+
+                                </div>
+                                {/* main row ends */}
 
                             </div>
-                            {/* dropdown ends */}
+                            {/* text over banner ends */}
 
                         </div>
-                        {/* cities ends */}
-
-                    </div>
-                    {/* third col in main row ends */}
+                        {/* card overlays ends */}
 
                 </div>
-                {/* main row ends */}
+                {/* card ends */}
 
             </div>
             {/* <!-- banner ends --> */}
@@ -220,13 +241,14 @@ const home = () => {
                     {/* first col in main row of procedure ends */}
 
                     {/* second col in main row of procedure starts */}
-                    <div className="col-lg-3">
-                        <img src="./assets/images/Video Process.png" className="mt-5 pt-5 mx-5 videoprocess" alt="video screen" height="70%" width="80%"/>
+                    <div className="col-xl-3">
+                        {/* <img src="./assets/images/Video Process.png" className="mt-5 pt-5 mx-5 videoprocess" alt="video screen" height="70%" width="80%"/> */}
+                        <ReactPlayer url="../assets/images/Scanprocedure.mp4" type="video/mp4" muted playing="true" loop="true" height="100%" width="100%" />
                     </div>
                     {/* second col in main row of procedure ends */}
 
                     {/* third col in main row of procedure ends */}
-                    <div className="col-lg-4 mt-3 colthree">
+                    <div className="col-xl-4 mt-3 colthree">
 
                         {/* Menu options card starts */}
                         <div className="card optioncard">
@@ -494,7 +516,7 @@ const home = () => {
                 <div className="row">
 
                     {/* first col in try our services starts */}
-                    <div className="col-md-6 mx-5">
+                    <div className="col-xl-6 col-md-6 col-sm-6 mx-5">
 
                         <h2 className="mb-5">Try Our Service<br/><span>Free </span>for<span> 30 Days</span></h2>
                         
@@ -521,7 +543,15 @@ const home = () => {
                             
                             </div>
 
-                            <h4 className="mt-5 pt-5">Try Our Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Free</b> for <b>30 days</b></h4>
+                            <div className="row mt-5 pt-5 overlappingtry">
+                                <div className="col-xl-4 pt-5">
+                                    <h4>Try Our Service</h4>
+                                </div>
+                                <div className="col-xl-4 pt-5">
+                                    <h4><b>Free</b> for <b>30 days</b></h4>
+                                </div>
+                            </div>
+                            {/* <h4 className="mt-5 pt-5 ">Try Our Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Free</b> for <b>30 days</b></h4> */}
 
                         </div>
                         {/* overlapping cards ends */}
@@ -530,7 +560,7 @@ const home = () => {
                     {/* first col in try our services ends */}
 
                     {/* second col in try our services starts */}
-                    <div className="col-md-4">
+                    <div className="col-xl-4 col-md-8 col-sm-8">
 
                         {/* card in second col starts */}
                         <div className="card cardform m-5">

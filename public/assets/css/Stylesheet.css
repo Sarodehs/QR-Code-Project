@@ -22,6 +22,7 @@ html,body
   padding: 0;
   margin: 0;
   box-sizing: content-box;
+  /* box-sizing: border-box; */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -92,7 +93,7 @@ html,body
   color: black;
   text-decoration: none;
 }
-.routebar ul li a  .active
+.routebar ul li  .active
 {
   color: var(--main);
 }
@@ -103,10 +104,6 @@ html,body
 .routebar ul li a:active
 {
   color: var(--main) !important;
-}
-.routebar .main-nav-active
-{
-  color:  var(--main);
 }
 .routebar .navbar-toggler:focus
 {
@@ -123,6 +120,16 @@ html,body
 
 /* banner part in home */
 
+.homebanner
+{
+  color: white !important;
+}
+.banner
+{
+  bottom: 0%;
+  background: rgba(0,0,0,0.6 );
+  width: 100%;
+}
 .banner h1
 {
   font-size: 3.2rem;
@@ -137,6 +144,15 @@ html,body
   font-size: 3.5rem;
   font-weight: 400;
   letter-spacing: 3px;
+  /* word-wrap: break-word; */
+}
+.banner .bannerleft p
+{
+  color: white !important;
+}
+.banner .bannerleft .bannerpricing
+{
+  background: transparent;
 }
 .banner .number
 {
@@ -727,7 +743,13 @@ html,body
     padding-right: 0% !important;
     /* width: 60%; */
   }
+  .try .overlappingtry
+  {
+    margin-top: 0% !important;
+    padding-top: 0% !important;
+  }
 }
+
 
 @media only screen and (width:540px)
 {

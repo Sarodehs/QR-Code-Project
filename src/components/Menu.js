@@ -29,27 +29,27 @@ const Menu = () => {
                             <ul className="navbar-nav mx-auto">
 
                             {/* home */}
-                            <li className={({isActive}) => (isActive ? 'main-nav-active': 'inactive')} class="nav-item me-5">
+                            <li  class="nav-item active me-5">
                                 <a class="nav-link active" href="/#"><Link to="/" className="pe-5">Home</Link></a>
                             </li>
                         
                             {/* pricing */}
-                            <li className={({isActive}) => (isActive ? 'main-nav-active': 'inactive')} class="nav-item me-5">
+                            <li  class="nav-item active me-5">
                                 <a class="nav-link" href="/#"><Link to="/pricing/" className="pe-5">Pricing</Link></a>
                             </li>
 
                             {/* contact */}
-                            <li  className={({isActive}) => (isActive ? 'main-nav-active': 'inactive')} class="nav-item me-5">
+                            <li   class="nav-item active me-5">
                                 <a class="nav-link" href="/#"><Link to="/contact/" className="pe-5">Contact Us</Link></a>
                             </li>
 
                             {/* login */}
-                            <li  className={({isActive}) => (isActive ? 'main-nav-active': 'inactive')} class="nav-item me-5">
+                            <li   class="nav-item active me-5">
                                 <a class="nav-link" href="/#"><Link to="/login/" className="pe-5">Log In</Link></a>
                             </li>
                             
                             {/* register */}
-                            <li className={({isActive}) => (isActive ? 'main-nav-active': 'inactive')} class="nav-item">
+                            <li  class="nav-item"active >
                                 <a href="/#" class="nav-link"><Link to="/register/" className="btn text-center text-white rounded-pill px-4 pe-4 navbtn">Register</Link></a>
                             </li>                                                                           
                              
