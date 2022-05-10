@@ -46,13 +46,13 @@ const payment = () =>{
                         <div>
 
                             {/* name on card */}
-                            <div class="mt-5">
+                            <div class="mt-5 paymentcardinput">
                                 <label for="exampleInputName" class="form-label">Name on Card</label>
                                 <input type="text" class="form-control" id="exampleInputName"/>                          
                             </div>
 
                             {/* card no */}
-                            <div class="mt-4">
+                            <div class="mt-4 paymentcardinput">
                                 <label for="exampleInputNumber" class="form-label">Card no.</label>
                                 <input type="number" class="form-control" id="exampleInputNumber"/>
                             </div>
@@ -60,7 +60,7 @@ const payment = () =>{
                             {/* first row starts */}
                             <div class="row mt-4">
 
-                                <div class="col-xl-5 col-md-10 col-sm-10">
+                                <div class="col-xl-5 col-md-12 col-sm-12">
 
                                     {/* validity */}
                                     <div class="paymentinput">
@@ -70,12 +70,10 @@ const payment = () =>{
 
                                 </div>
 
-                                <div class="col-xl-1 col-md-2 col-sm-4"></div>
-
-                                <div class="col-xl-4 col-md-8 col-sm-8">
+                                <div class="col-xl-5 col-md-12 col-sm-12">
 
                                     {/* cvv */}
-                                    <div class="paymentinput">
+                                    <div class="mx-5 px-4 paymentinputcvv">
                                         <label for="exampleInputNo" class="form-label">CVV</label>
                                         <input type="number" class="form-control" id="exampleInputNo"/>
                                     </div>
@@ -85,7 +83,7 @@ const payment = () =>{
                             </div>
                             {/* first row ends */}
 
-                            {/* second row strats */}
+                            {/* second row starts */}
                             <div class="row mt-5 mb-5">
 
                                 <div class="col-xl-3 col-md-6 col-sm-12">

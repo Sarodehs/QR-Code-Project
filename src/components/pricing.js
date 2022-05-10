@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Menu from "./Menu";
+import Footer from "./Footer";
 // import monthly from "../monthly";
 
 const pricing = () => {
@@ -10,12 +12,16 @@ const pricing = () => {
         {/* <!-- container-fluid starts --> */}
         <div class="container-fluid">
 
+            <Menu/>
+
             {/* <!-- pricing text starts --> */}
             <div class="text-center mt-5 pricing">
                 <h2>Pricing Plans</h2>
                 <p>for your every stage of growth</p>
 
-                <Link to="monthly/"><button class="btn btn-sm ps-4 pe-4 silbtn">Monthly</button></Link>
+                {/* <Link to="monthly/"> */}
+                    <button class="btn btn-sm ps-4 pe-4 silbtn">Monthly</button>
+                    {/* </Link> */}
                 {/* <Link to="/"> */}
                     <button class="btn btn-sm ps-4 pe-4 text-center navbtn">Yearly</button>
                     {/* </Link> */}
@@ -24,18 +30,18 @@ const pricing = () => {
                 <div class="yearly">
 
                     {/* <!-- row starts --> */}
-                    <div class="row mt-5 mx-5 px-5">
+                    <div class="row mt-5 d-flex justify-content-center">
 
                         {/* <!-- free plan starts --> */}
-                        <div class="col-xl-3 mt-5 mb-5 mx-5 text-center">
+                        <div class="col-xl-3 col-md-6 col-sm-12 mt-5 mb-5 text-center">
 
                             {/* <!-- free plan card start --> */}
-                            <div class="card pb-5">
+                            <div class="card pb-5 freecard">
 
                                 {/* <!-- head part in free plan card --> */}
                                 <div class="card-header text-center mt-3">
 
-                                    <h6 style={{color: "#FF7000"}}>Free plan</h6>
+                                    <h6 style={{color: "#B5876D"}}>Free plan</h6>
                                     <h3>Free</h3>
                                     <p><small class="text-muted">For First Month</small></p>
 
@@ -62,15 +68,15 @@ const pricing = () => {
                         {/* <!-- free plan ends --> */}
 
                         {/* <!-- gold plan starts --> */}
-                        <div class="col-xl-3 text-center">
+                        <div class="col-xl-3 col-md-6 col-sm-12 mx-4 text-center">
 
                             {/* <!-- gold plan card start --> */}
-                            <div class="card pb-5">
+                            <div class="card pb-5 goldcard">
 
                                 {/* <!-- head part in gold plan card --> */}
                                 <div class="card-header text-center mt-3">
 
-                                    <h6 class="mx-5" style={{color: "#FF7000"}}>Gold Plan  </h6>
+                                    <h6 class="mx-5" style={{color: "#B5876D"}}>Gold Plan  </h6>
                                         <button class="btn btn-sm px-4 pe-4 popularbtn rounded-pill"><small>Popular</small></button>
                                     {/* </h6> */}
                                     <h3><span class="material-icons-outlined">currency_rupee</span>05<span>K</span></h3>
@@ -85,7 +91,7 @@ const pricing = () => {
                                     <i class="fa fa-check pe-3" aria-hidden="true"></i>Custom QR code(Unlimited QR codes)<br/>
                                     <i class="fa fa-check pe-3" aria-hidden="true"></i>Creation of special offers and discounts<br/>
                                     <i class="fa fa-check pe-3" aria-hidden="true"></i>Contactless payments<br/><br/><br/>
-                                    <button type="button" class="btn px-5 pe-5 navbtn btn-sm">Chooose</button>
+                                    <button type="button" class="btn px-5 pe-5 navbtn btn-sm goldchoosebutton">Chooose</button>
                                     </li>
 
                                 </ul>
@@ -97,15 +103,15 @@ const pricing = () => {
                         {/* <!-- gold plan ends --> */}
 
                         {/* <!-- silver plan starts --> */}
-                        <div class="col-xl-3 mt-5 mx-5 px-4 text-center">
+                        <div class="col-xl-3  col-md-6 col-sm-12 mt-5 mx-4 text-center">
 
                             {/* <!-- silver plan card start --> */}
-                            <div class="card pb-5">
+                            <div class="card pb-5 silvercard">
 
                                 {/* <!-- head part in silver plan card --> */}
                                 <div class="card-header text-center mt-3">
 
-                                    <h6 style={{color: "#FF7000"}}>Silver plan</h6>
+                                    <h6 style={{color: "#B5876D"}}>Silver plan</h6>
                                     <h3><span class="material-icons-outlined">currency_rupee</span>04<span>K</span></h3>
                                     <p><small class="text-muted">Per member Per Month</small></p>
 
@@ -118,7 +124,7 @@ const pricing = () => {
                                     <i class="fa fa-check pe-3" aria-hidden="true"></i>Custom QR code(25 QR codes)<br/>
                                     <i class="fa fa-check pe-3" aria-hidden="true"></i>Choose your own theme<br/>
                                     <i class="fa fa-check pe-3" aria-hidden="true"></i>24*7 customer support<br/><br/><br/>
-                                    <Link to="/pricing/checkout/"><button type="button" class="btn btn-sm px-5 pe-5 silbtn">Chooose</button></Link>
+                                    <Link to="/pricing/checkout/" style={{ textDecoration: 'none' }}><button type="button" class="btn btn-sm px-5 pe-5 silbtn" >Chooose</button></Link>
                                     </li> 
                                 
                                 </ul>
@@ -143,44 +149,49 @@ const pricing = () => {
 
                 <h3 class="px-5 mx-5">What our Customers say?</h3>
 
+                {/* customer part starts */}
                 <div class="text-center mt-5 mb-4 customer">
 
-                    {/* our customers */}
-                    <div class="row">
+                    {/* <div className="d-flex justify-content-around">
+                    <span class="material-icons picons pt-5 mt-3">arrow_circle_left</span> 
+                    <img src="../assets/images/p1.png" height="10%" width="10%" class=" mt-5" alt="first person"/>
+                    <img src="../assets/images/p2.png" height="15%" width="15%" class="" alt="second person"/>   
+                    <img src="../assets/images/p3.png" height="10%" width="10%" class=" mt-5" alt="third person"/>
+                    <span class="material-icons picons  pt-5 mt-3">arrow_circle_right</span>
+                    </div> */}
 
-                        <div class="col-xl-1"></div>
+                    {/* row starts */}
+                    <div class="row d-flex justify-content-center">
 
-                        <div class="col-xl-1 mt-5 pt-3">
-                            <span class="material-icons picons pe-5">arrow_circle_left</span>  
-                        </div>
-                        
-                        <div class="col-xl-2 mt-5">
-                            <img src="../assets/images/p1.png" height="65%" width="60%" class="pe-5" alt="first person"/>
-                        </div>
-
-                        <div class="col-xl-2 mb-4">
-                            <img src="../assets/images/p2.png" height="100%" width="90%" class="pe-5" alt="second person"/>   
-                        </div>
-
-                        <div class="col-xl-2 mt-5">
-                            <img src="../assets/images/p3.png" height="65%" width="60%" class="pe-5" alt="third person"/>
-                        </div>
-
-                        <div class="col-xl-1 mt-5 pt-3">
-                            <span class="material-icons picons">arrow_circle_right</span>
-                        </div>
-                        
                         <div class="col-xl-2"></div>
 
-                    </div>
+                        <div class="col-xl-1 col-md-2 col-sm-4 mt-5 pt-4">
+                            <span class="material-icons picons">arrow_circle_left</span>  
+                        </div>
+                        
+                        <div class="col-xl-1 col-md-2 col-sm-4 mt-5">
+                            <img src="../assets/images/p1.png" width="90%" class="" alt="first person"/>
+                        </div>
 
-                    {/* <span class="material-icons picons pe-5">arrow_circle_left</span>
-                    <img src="../assets/images/p1.png" height="12%" width="10%" class="pe-5" alt="first person"/>
-                    <img src="../assets/images/p2.png" height="15%" width="15%" class="pe-5" alt="second person"/>
-                    <img src="../assets/images/p3.png" height="12%" width="10%" class="pe-5" alt="third person"/>
-                    <span class="material-icons picons">arrow_circle_right</span> */}
+                        <div class="col-xl-2 col-md-4 col-sm-8 mb-4">
+                            <img src="../assets/images/p2.png"  width="80%" class="" alt="second person"/>   
+                        </div>
+
+                        <div class="col-xl-1 col-md-2 col-sm-4 mt-5">
+                            <img src="../assets/images/p3.png" width="90%" class="" alt="third person"/>
+                        </div>
+
+                        <div class="col-xl-1  col-md-2 col-sm-4 mt-5 pt-4">
+                            <span class="material-icons picons px-5">arrow_circle_right</span>
+                        </div>
+                        
+                        <div class="col-xl-2  col-md-4 col-sm-8"></div>
+
+                    </div>
+                    {/* row ends */}
 
                 </div>    
+                {/* customer part ends */}
 
                 {/* review by customer */}
                 <div class="customerreview">
@@ -195,15 +206,15 @@ const pricing = () => {
             {/* <!-- end of customer says --> */}
 
             {/* <!-- faq starts--> */}
-            <div class="faq mt-5 pt-5">
+            <div class="faq mx-5">                
 
-                <h3 class="px-5 pb-3 mx-5">Frequently Asked Questions</h3>
+            <h3 class="mb-5 px-5">Frequently Asked Questions</h3>
 
                 {/* accordion starts */}
-                <div class="accordion accordion-flush me-5 offset-1"  id="accordionFlushExample">
+                <div class="accordion accordion-flush"  id="accordionFlushExample">
 
                     {/* first faq */}
-                    <div class="accordion-item mb-5 mt-5">
+                    <div class="accordion-item mb-4 mt-4 mx-5">
 
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -218,7 +229,7 @@ const pricing = () => {
                     </div>
 
                     {/* second faq */}
-                    <div class="accordion-item mb-5">
+                    <div class="accordion-item mb-4 mx-5">
 
                         <h2 class="accordion-header" id="flush-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -233,7 +244,7 @@ const pricing = () => {
                     </div>
 
                     {/* third faq */}
-                    <div class="accordion-item mb-5">
+                    <div class="accordion-item mb-4 mx-5">
 
                         <h2 class="accordion-header" id="flush-headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -248,7 +259,7 @@ const pricing = () => {
                     </div>
 
                     {/* fourth faq */}
-                    <div class="accordion-item mb-5">
+                    <div class="accordion-item mb-4 mx-5">
 
                         <h2 class="accordion-header" id="flush-headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
@@ -263,7 +274,7 @@ const pricing = () => {
                     </div>
 
                     {/* fifth faq */}
-                    <div class="accordion-item mb-5">
+                    <div class="accordion-item mb-4 mx-5">
 
                         <h2 class="accordion-header" id="flush-headingFive">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
@@ -281,7 +292,9 @@ const pricing = () => {
                 {/* accordion ends */}
 
             </div>
-            {/* <!-- faq ends --> */}
+            {/* <!-- faq ends --> */}            
+
+            <Footer />
 
         </div>  
         {/* <!-- container-fluid ends --> */}

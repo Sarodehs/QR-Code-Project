@@ -205,6 +205,11 @@ html,body
 
 /* scan menu part */
 
+.scanmenu
+{
+  background-image: url('../images/gifimg.png');
+  background-repeat: no-repeat;
+}
 .scanmenu .qrmenu
 {
   margin-top: 18%;
@@ -448,6 +453,11 @@ html,body
 
 /* Our offerings */
 
+.offerings
+{
+  background-image: url('../images/gifimg.png');
+  background-repeat: no-repeat;
+}
 .offerings h2
 {
   font-weight: 600;
@@ -531,7 +541,7 @@ html,body
 }
 
 
-@media screen and (max-width:1200) 
+@media screen and (max-width:1200px) 
 {
   .wcu
   {
@@ -566,6 +576,11 @@ html,body
 
 /* key features part */
 
+.keyfeatures
+{
+  background-image: url('../images/gifimg.png');
+  background-repeat: no-repeat;
+}
 .keyfeatures h2
 {
   font-weight: 600;
@@ -626,14 +641,14 @@ html,body
   height: 10rem;
   width: 66% !important;
   margin-bottom: -55%;
-  /* background-color: red; */
+  background-color: red;
 }
 .two
 {
   height: 12rem;
   margin-top: 30%;
   width: 63% !important;
-  /* background-color: #FF7000; */
+  background-color: #FF7000;
 }
 .three
 {
@@ -653,6 +668,10 @@ html,body
 .try .cardform h3
 {
   font-weight: 600;
+}
+.try .tosrequest
+{
+  width: 60%;
 }
 .try input:focus
 {
@@ -702,7 +721,12 @@ html,body
     margin-left: auto;
     margin-right: auto;
   }
-  
+  .try .tosrequest
+  {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    /* width: 60%; */
+  }
 }
 
 @media only screen and (width:540px)
@@ -757,14 +781,6 @@ html,body
 
 /* pricing section */
 
-/* .pricing
-{
-  background-image: url(./Images/img.png);
-  background-repeat: no-repeat;
-  height: 120vh;
-  width: 100%;
-} */
-
 /* yearly part in pricing */
 
 .yearly .card
@@ -773,6 +789,40 @@ html,body
   border: 1px solid antiquewhite;
   text-align: left;
   box-shadow: 0 0 10px rgb(128,128,128);
+}
+.yearly .freecard
+{
+  width: 80%;
+}
+.yearly .freecard button
+{
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.yearly .goldcard
+{
+  width: 90%;
+}
+.yearly .goldcard .goldchoosebutton
+{
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.yearly .silvercard
+{
+  width: 80%;
+}
+.yearly .silvercard button
+{
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-decoration: none;
 }
 .yearly .card-header
 {
@@ -812,35 +862,9 @@ html,body
 .yearly ul li button
 {
   margin-left: 17%;
-
 }
 
-/* monthly part in pricing */
 
-.monthly .card
-{
-  border: none;
-  border: 1px solid antiquewhite;
-  box-shadow: 0 0 10px rgb(128,128,128);
-}
-.monthly .card-header
-{
-  background-color: white;
-}
-.monthly span
-{
-  font-size: 15px;
-  font-weight: 500;
-}
-.monthly .list-group li
-{
-  border: none;
-  line-height: 30px;
-}
-.monthly ul li button
-{
-  margin-left: 17%;
-}
 
 /* customer says part */
 
@@ -849,7 +873,7 @@ html,body
 .picons
 {
   color: var(--main);
-  font-size: 2.5rem !important;
+  font-size: 2rem !important;
 }
 
 /* review by customer */
@@ -861,13 +885,12 @@ html,body
 }
 
 /* faq in pricing */
-
 .faq
 {
-  background-image: url('../images/bgimg.png') !important;
-  background-repeat: no-repeat;
-  width: 90%;
+  background-image: url('../images/bgimg.png');
+  width: 80%;
 }
+
 .faq .accordion-button::after
 {
   color: black !important; 
@@ -880,7 +903,7 @@ html,body
 .faq .accordion-button .collapsed
 {
   color: black !important;
-  background-color: #F8F3F0!important;
+  background-color: #F8F3F0 !important;
 }
 .faq .accordion-button:focus
 {
@@ -900,20 +923,49 @@ html,body
 
 /* media query for pricing section */
 
-@media screen and (min-width:1200)
+@media screen and (max-width:1200px)
 {
-  /* .yearly .card
+  .yearly .freecard
   {
-    
-    width: 80% !important;
-    margin: 0% !important;
-    padding: 0% !important;
+    width: 70% !important;
+    margin-left: 10% !important;
   }
-  .yearly ul li button
+  .yearly .freecard button
   {
-    
-    padding: 0% !important;
-  } */
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    width: 60% !important;
+  }
+  .yearly .goldcard
+  {
+    width: 70% !important;
+    margin-left: 5% !important;
+  }
+  .yearly .goldcard .goldchoosebutton
+  {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    width: 60% !important;
+  }
+  .yearly .silvercard
+  {
+    width: 70% !important;
+    margin-left: 5% !important
+  }
+  .yearly .silvercard button
+  {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    width: 60% !important;
+  }
+  .popularbtn
+  {
+    font-size: xx-small;
+    margin-left: 80%;
+    margin-top: -25%;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
   .customer
   {
     margin: 0% ;
@@ -939,11 +991,21 @@ html,body
     /* margin-top: 10%; */
     margin-bottom: 0% !important;
   }
+  .customerreview .card
+  {
+    width: 80% !important;
+  }
   .faq
   {
     text-align: center;
-    margin-left: 0%;
+    width: 90% !important;
+    margin: 0% !important;
   }
+  .faq .row
+  {
+    margin: 0% !important;
+  }
+
 }
 
 
@@ -1085,6 +1147,13 @@ html,body
   {
     width: 90%;
   }
+  .login  .loginsigninbtn
+  {
+    /* width: 45% !important; */
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    width: 95% !important;
+  }
 }
 
 
@@ -1106,11 +1175,8 @@ html,body
 
 .footer i
 {
-  font-size: 22px;
-}
-.foottext
-{
-  text-align: center;
+  font-size: 20px;
+  padding: 1% 0% 0% 0%;
 }
 
 /* css for icons in footer */
@@ -1156,7 +1222,11 @@ html,body
     display: flex;
     justify-content: space-evenly;
   }
-  
+  .footer hr
+  {
+    width: 80%;
+    margin-left: 10%;
+  } 
 }
 
 
@@ -1184,23 +1254,24 @@ html,body
   height: 100%;
   border: none;
   box-shadow:0 0 4px var(--main);
-  background-image: url('../images/registerbg.png') !important;
+  background-image: url('../images/registerbg.png');
   background-repeat: no-repeat;
 }
-
-/* logo in card section */
-
-.registerlogo
+.registerleft .registerlogo
 {
-  margin-left: 40%;
-  padding-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.registerleft h5
+{
+  color: #B5876D;
 }
 
 /* person with qr code img */
 
 .registerscan
 {
-  margin-left: 30%;
   margin-top: 40%;
 }
 
@@ -1231,7 +1302,9 @@ html,body
 {
   .registerform button
   {
-    width: 35%;
+    width: 85%;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
   }    
 }
 
@@ -1321,16 +1394,13 @@ html,body
 }
 .checkout .planmain
 {
-  width: 90%;
   box-shadow: 0 0 2px rgb(128,128,128);
 }
 .checkout .planmain .plansub
 {
-  width: 70%;
   box-shadow: 0 0 10px rgb(128, 118, 118);
-  margin-left: 15% !important;
 }
-.checkout .planmain .plansub.siltext
+.checkout .planmain .plansub .siltext
 {
   color: #B5876D;
 }
@@ -1342,22 +1412,10 @@ html,body
 {
   line-height: 250%;
 }
-.checkout .userinfo
-{
-  width: 90%;
-}
 .checkout .userinfo .editicon
 {
   color: var(--main);
   font-size: 25px !important;
-}
-.checkout .plandetails
-{
-  width: 90%;
-}
-.checkout .planprice
-{
-  width: 90%;
 }
 .checkout .planprice table
 {
@@ -1370,6 +1428,7 @@ html,body
   margin-left: 20% !important;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .checkout .planprice .total
 {
@@ -1380,36 +1439,75 @@ html,body
 
 /* media query for checkout section */
 
-.checkout .planmain
+@media screen and (max-width:1200px)
 {
-  width: 80%;
-  margin-left: 5% !important;
-}
-.checkout .planmain .plansub
-{
-  width: 70%;
-}
-.checkout .userinfo
-{
-  width: 80%;
-  margin-left: 5% !important;
-}
-.checkout .plandetails
-{
-  width: 80%;
-  margin-left: 5% !important; 
-}
-.checkout .plandetails input
-{
-  width: 75%;
-}
-.checkout .planprice
-{
-  width: 80%;
-  margin-left: 5% !important; 
-  margin-bottom: 10% !important;
+  .checkout h2
+  {
+    text-align: center;
+  }
+  .checkout .planmain
+  {
+    width: 80% !important;
+    margin-left: 5% !important;
+  }
+  .checkout .planmain .plansub
+  {
+    width: 80% !important;
+    margin-left: 10% !important;
+  }
+  .checkout .plandetails input
+  {
+    width: 90% !important;
+  }
+  .checkout .userinfo
+  {
+    width: 80% !important;
+  }
+  .checkout .plandetails
+  {
+    width: 80% !important;
+  }
+  .checkout .planprice
+  {
+    width: 80% !important;
+  }
+  .checkout .planprice hr
+  {
+    width: 50% !important;
+    margin-left: 10% !important;
+  }
 }
 
+@media only screen and (width:280px)
+{
+  .checkout .userinfo
+  {
+    width: 70% !important;
+  }
+  .checkout .plandetails
+  {
+    width: 70% !important;
+  }
+  .checkout .plandetails input
+  {
+    width: 65% !important;
+  }
+  .checkout .planprice
+  {
+    width: 80% !important;
+    margin-left: 4% !important;
+  }
+  .checkout .planprice table
+  {
+    width: 80% !important;
+    margin-left: 8% !important;
+  }
+  .checkout .planprice hr
+  {
+    width: 45% !important;
+    margin-left: 7% !important;
+  }
+}
 
 
 
@@ -1458,9 +1556,20 @@ html,body
     width: 70%;
     margin-left: 12% !important;
   }
+  .payment .paymentcardmain .paymentcardinput
+  {
+    width: 95% ;
+  }
   .payment .paymentcardmain .paymentinput
   {
     width: 90%;
+  }
+  .payment .paymentcardmain .paymentinputcvv
+  {
+    width: 90% !important;
+    margin-left: 0% !important;
+    padding: 0% !important;
+    margin-top: 10% !important;
   }
 }
 
@@ -1478,6 +1587,19 @@ html,body
 .paysuccess h2
 {
   color: rgb(3, 168, 3);
+}
+
+
+
+/* media query for paysuccess section */
+
+@media screen and (max-width:1200px)
+{
+  .paysuccess
+  {
+    margin-top: 40% !important;
+    margin-bottom: 40% !important;
+  }  
 }
 
 

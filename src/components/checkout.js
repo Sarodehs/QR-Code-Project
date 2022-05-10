@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const hrstyle ={
     width: "50%",
@@ -13,8 +14,16 @@ const checkout = () => {
         {/* <!-- container-fluid starts --> */}
         <div class="container-fluid">
             
+            <nav class="navbar navbar-light bg-light">
+  
+                <a className="navbar-brand" href="/#">
+                    <img src="/assets/images/logo.png" class="mx-5" alt="logo" width="50px" height="30px"/>
+                </a>
+
+            </nav>
+
             {/* checkout starts */}
-            <div class="mb-5 checkout">
+            <div class="checkout">
 
                 <h2 class="p-4 mx-5"><b>Checkout</b></h2>
 
@@ -22,10 +31,10 @@ const checkout = () => {
                 <div class="row">
 
                     {/* main row col first starts */}
-                    <div class="col-xl-5 text-center">
+                    <div class="col-xl-5 col-mb-10 col-sm-10 text-center">
 
                         {/* main card in first col starts*/}
-                        <div class="card mt-4 mx-5 mb-5 planmain">
+                        <div class="card mt-4 mx-5 mb-5 me-5 planmain">
 
                             <p class="pt-4"><small>Selected Plan</small></p>
                             <h5 class="mb-4">Monthly Silver Plan</h5>
@@ -77,10 +86,10 @@ const checkout = () => {
                     {/* main row col first ends */}
 
                     {/* main row col second starts */}
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-md-11 col-sm-11">
 
                         {/* userinfo first card in second col starts*/}
-                        <div class="card mb-5 mx-5 mt-5 userinfo">
+                        <div class="card mb-5 mx-4 mt-5 userinfo">
 
                             {/* ul in userinfo starts */}
                             <ul class="list-group">
@@ -88,12 +97,14 @@ const checkout = () => {
                                 {/* first li containing name starts */}
                                 <li class="list-group-item">
 
-                                    <div class="row px-2 mt-4">
+                                    <div class="row px-2">
 
-                                        <div class="col-xl-2"><h6>Name</h6></div>
-                                        <div class="col-xl-7">Kunal Balkrushna Nemade</div>
-                                        <div class="col-xl-1"><span class="material-icons-outlined editicon">edit</span></div>
-                                    
+                                        <div className="d-flex justify-content-between">
+                                            <div class="col-xl-2 col-md-4 col-sm-8 pe-3"><h6>Name</h6></div>
+                                            <div class="col-xl-7 col-md-7 col-sm-7">Kunal Balkrushna Nemade</div>
+                                            <div class="col-xl-1 col-md-2 col-sm-4"><span class="material-icons-outlined editicon">edit</span></div>
+                                        </div>
+
                                     </div>
 
                                 </li>
@@ -104,10 +115,12 @@ const checkout = () => {
 
                                     <div class="row px-2">
 
-                                        <div class="col-xl-2"><h6>Email</h6></div>
-                                        <div class="col-xl-7">KunalBNemade@gmail.com</div>
-                                        <div class="col-xl-1"><span class="material-icons-outlined editicon">edit</span></div>
-                                    
+                                        <div className="d-flex justify-content-between">
+                                            <div class="col-xl-2 col-md-4 col-sm-8 pe-3"><h6>Email</h6></div>
+                                            <div class="col-xl-7 col-md-7 col-sm-7">KunalBNemade@gmail.com</div>
+                                            <div class="col-xl-1 col-md-2 col-sm-4"><span class="material-icons-outlined editicon">edit</span></div>
+                                        </div>
+
                                     </div>
 
                                 </li>
@@ -116,12 +129,14 @@ const checkout = () => {
                                 {/* third li containing phone starts */}
                                 <li class="list-group-item">
 
-                                    <div class="row px-2 mb-3">
+                                    <div class="row px-2">
 
-                                        <div class="col-xl-2"><h6>Phone</h6></div>
-                                        <div class="col-xl-7">+91 98653 78451</div>
-                                        <div class="col-xl-1"><span class="material-icons-outlined editicon">edit</span></div>
-                                    
+                                        <div className="d-flex justify-content-between">
+                                            <div class="col-xl-2 col-md-4 col-sm-8 pe-3"><h6>Phone</h6></div>
+                                            <div class="col-xl-7 col-md-7 col-sm-7">+91 98653 78451</div>
+                                            <div class="col-xl-1 col-md-2 col-sm-4"><span class="material-icons-outlined editicon">edit</span></div>
+                                        </div>
+
                                     </div>
 
                                 </li>
@@ -134,7 +149,7 @@ const checkout = () => {
                         {/* userinfo first card in second col ends*/}
 
                         {/* plandetails second card in second col starts */}
-                        <div class="card mb-5 mx-5 mt-5 plandetails">
+                        <div class="card mb-5 mx-4 mt-5 plandetails">
 
                             {/* ul in plandetails starts */}
                             <ul class="list-group">
@@ -142,7 +157,7 @@ const checkout = () => {
                                 {/* first li cointaining selected plan starts */}
                                 <li class="list-group-item">
 
-                                    <div class="row px-4 mt-4">
+                                    <div class="row px-4">
 
                                         <div class="col-xl-4"><p><small class="text-muted">Selected Subscription</small></p></div>
                                         <div class="col-xl-6"><h5>Monthly Silver Plan</h5></div>
@@ -195,7 +210,7 @@ const checkout = () => {
                                         {/* col for apply button */}
                                         <div class="col-xl-2">
 
-                                            <button type="button" class="btn btn-sm px-4 mt-5 mb-4 navbtn">APPLY</button>
+                                            <button type="button" class="btn btn-sm px-4 mt-5 navbtn">APPLY</button>
                                         
                                         </div>
                                         {/* col for apply button ends */}
@@ -213,11 +228,11 @@ const checkout = () => {
                         {/* plandetails second card in second col ends */}
 
                         {/* planpricing third card in second col starts */}
-                        <div class="card mx-5 pb-5 pt-4 mt-5 planprice">
+                        <div class="card mx-4 pb-4 pt-2 planprice">
 
                             <h5 class="p-3 mx-5"><b>Order Summary</b></h5>
 
-                            <table class="mx-5">
+                            <table class="mx-5 ">
 
                                 <tr>
                                     <td>Plan</td>
@@ -279,6 +294,8 @@ const checkout = () => {
 
             </div>
             {/* checkout ends */}
+
+            <Footer/>
 
         </div>
         {/* <!-- container fluid ends --> */}

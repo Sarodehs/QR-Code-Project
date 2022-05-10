@@ -1,4 +1,6 @@
 import React from "react";
+import Menu from "./Menu";
+import Footer from "./Footer";
 
 const login = () => {
     return(
@@ -6,6 +8,8 @@ const login = () => {
 
             {/* <!-- container-fluid starts --> */}
             <div class="container-fluid">
+
+                <Menu/>
 
                 {/* <!-- login starts --> */}
                 <div class="login">
@@ -68,6 +72,8 @@ const login = () => {
 
                 </div>
                 {/* <!-- login ends --> */}
+
+                <Footer/>
 
             </div>
             {/* <!-- container fluid ends --> */}

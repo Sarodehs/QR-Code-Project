@@ -60,7 +60,7 @@ const Footer = () => {
                     {/* <!-- row end --> */}
 
                 </div> 
-                 {/* <!-- end of upper part of footer -->                                                                                <!--  --> */}
+                 {/* <!-- end of upper part of footer -->  */}
               
                 <hr style={ box }/>
 
@@ -74,7 +74,7 @@ const Footer = () => {
 
                             <span class="material-icons-outlined footicon">arrow_circle_up</span>
                         
-                            <p class="foottext"><small class="text-muted">&#169; 2021 FelixTechLabs, Pune</small></p>
+                            <p><small class="text-muted">&#169; 2021 FelixTechLabs, Pune</small></p>
                         
                             <span class="material-icons p-1 footicon">forum</span>
 

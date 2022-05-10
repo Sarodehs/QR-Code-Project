@@ -1,4 +1,6 @@
 import React from "react";
+import Menu from "./Menu";
+import Footer from "./Footer";
 
 const contact = () => {
 
@@ -7,6 +9,8 @@ const contact = () => {
 
             {/* <!-- container fluid starts --> */}
             <div class="container-fluid">
+
+                <Menu/>
 
                 {/* <!-- contact us starts --> */}
                 <div class="mt-5 mb-5 contact">
@@ -95,6 +99,8 @@ const contact = () => {
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.404215879449!2d73.81548731436864!3d18.510627074310598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfbd8d5112df%3A0x40888f31c5f88b84!2sFelix%20IT%20Systems%20%7C%20UI%20UX%20Design%20Courses%20in%20Pune%20%7C%20Placements!5e0!3m2!1sen!2sin!4v1650367197153!5m2!1sen!2sin" width="60%" height="400" allowfullscreen="" loading="lazy" title="Location of Felix Its"></iframe>
                 </div>
                 {/* <!-- map ends --> */}
+
+                <Footer />
 
             </div>
             {/* <!-- container fluid ends--> */}

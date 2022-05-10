@@ -19,9 +19,11 @@ const registernow = () =>{
 
                             <div class="card registerleft">
 
-                                <img src="/assets/images/logo.png" alt="logo" height="40px" width="80px" class="mt-5 registerlogo"/>
-                                <p class="pt-5 text-center">Welcome to Contactless<br/>QR Menu Scanner</p>
-                                <img src="/assets/images/registerimg.png"  alt="register" width="80%" class="registerscan"/>
+                                <img src="/assets/images/logo.png" alt="logo" height="40px" width="80px" className="mt-5 mb-5 registerlogo"/>
+                                <div className="d-flex justify-content-center mt-5 mb-5 ">
+                                <h5 class="text-center">Welcome to Contactless<br/>QR Menu Scanner</h5>
+                                </div>
+                                <img src="/assets/images/registerimg.png"  alt="register" width="80%" class="mx-5 px-4 registerscan"/>
                             
                             </div>
 
