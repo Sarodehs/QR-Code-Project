@@ -11,7 +11,7 @@ const Topnav = () => {
                     {/* <!--top nav start --> */}
                     <nav className="navbar navbar-expand-md navbar-light w-100 topnavpadd">
                         <div className="navbar-nav  d-flex justify-content-center px-4">
-                            <a className="navbar-brand" href="/#"> <img src="../assets/images/logo.png" className="img-fluid w-75" alt="logo" /></a>
+                            <a className="navbar-brand" href="/#"> <img src="/assets/images/logo.png" className="img-fluid w-75" alt="logo" /></a>
                         </div>
                         <div className="text-end px-4" >
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

@@ -1,9 +1,21 @@
 
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, } from "react-router-dom"
-import Footer from './Components/Pages/Footer';
-import Topnav from './Components/Pages/Topnav';
-import Sidenav from './Components/Sidenav';
+
+import Signup from './Components/SignupPages/Signup';
+import Relogin from './Components/SignupPages/Relogin'
+import Details from './Components/SignupPages/Details';
+import Branch from './Components/SignupPages/Branch';
+import Addbranch from './Components/SignupPages/Addbranch';
+import AddLogo from './Components/SignupPages/AddLogo';
+import Generateqrcode from './Components/SignupPages/Generateqrcode';
+import Downlodeqrcode from './Components/SignupPages/Downlodeqrcode';
+
+import SelectTheme from './Components/Select/SelectTheme';
+import SelectFont from './Components/Select/SelectFont';
+import SelectWallpaper from './Components/Select/SelectWallpaper';
+import SelectMenu from './Components/Select/SelectMenu';
+
 
 import Dashboard from './Components/Pages/Dashboard';
 import Faq from './Components/Pages/Faq';
@@ -37,43 +49,63 @@ function App() {
   return (
     <>
       <Router>
-        <Topnav />
-        <Sidenav>
-          <Routes>
-            <Route path='/' element={<Dashboard />} />
+        <Routes>
+            
+           <Route path='/' element={<Signup />} />
+           <Route path='/Details/' element={<Details />} />
+           <Route path='/Branch/' element={<Branch />} />
+           <Route path='/AddLogo/' element={<AddLogo/>} />
+           <Route path='/Generateqrcode/' element={<Generateqrcode/>} />
+           <Route path='/Downlodeqrcode/' element={<Downlodeqrcode/>} />
 
-            <Route path='Menu/Starters/' element={<Starters />} />
-            <Route path='Menu/Starters/AddDish/' element={<AddDish />} />
-            <Route path='Menu/Starters/EditDish/' element={<EditDish />} />
-
-            <Route path='Menu/Curries/' element={<Curries />} />
-            <Route path='Menu/Fries/' element={<Fries />} />
-            <Route path='Menu/Soups/' element={<Soups />} />
-            <Route path='Menu/RiceBiriyani/' element={<RiceBiriyani />} />
-            <Route path='Menu/Dessert/' element={<Dessert />} />
-            <Route path='Menu/Drinks/' element={<Drinks />} />
-            <Route path='Menu/Shakes/' element={<Shakes />} />
-            <Route path='Menu/Special/' element={<Special />} />
-
-
-              <Route path='Setting/EditRestaurantProfile/' element={<EditRestaurantProfile />} />
-              <Route path='Setting/ManageCategory/' element={<ManageCategory />} />
-              <Route path='Setting/ManageCategory/EditDish/' element={<EditDish />} />
-              <Route path='Setting/ManageCategory/AddCategory/' element={<AddCategory />} />
-              <Route path='Setting/ChangeTheme/' element={<ChangeTheme />} />
-              <Route path='Setting/ChangeFont/' element={<ChangeFont />} />
-              <Route path='Setting/ChangePassword/' element={<ChangePassword />} />
-              <Route path='Setting/GenerateQRCode/' element={<GenerateQRCode />} />
-              <Route path='Setting/GenerateQRCode/DownlodeQRCode/' element={<DownlodeQRCode />} />
-              <Route path='Setting/AddBranch/' element={<AddBranch />} />
-  
-            <Route path='Faq/' element={<Faq />} />
-            <Route path='Contact/' element={<Contact />} />
-          </Routes>
-        </Sidenav>
+           <Route path='/Addbranch/' element={<Addbranch/>} />
+           <Route path='/AddLogo/' element={<AddLogo/>} />
+           <Route path='/Generateqrcode/' element={<Generateqrcode/>} />
+           <Route path='/Downlodeqrcode/' element={<Downlodeqrcode/>} />
+           
+           <Route path='/SelectTheme/' element={<SelectTheme />} />
+           <Route path='/SelectFont/' element={<SelectFont />} />
+           <Route path='/SelectWallpaper/' element={<SelectWallpaper />} />
+           <Route path='/SelectMenu/' element={<SelectMenu />} />
+      
 
 
-        <Footer />
+          <Route path='/Dashboard/' element={<Dashboard />} />
+          <Route path='/Relogin/' element={<Relogin />} />
+          
+          <Route path='/Menu/Starters/' element={<Starters />} />
+          <Route path='/AddDish/' element={<AddDish />} />
+          <Route path='/EditDish/' element={<EditDish />} />
+
+
+          <Route path='/Menu/Curries/' element={<Curries />} />
+          <Route path='/Menu/Fries/' element={<Fries />} />
+          <Route path='/Menu/Soups/' element={<Soups />} />
+          <Route path='/Menu/RiceBiriyani/' element={<RiceBiriyani />} />
+          <Route path='/Menu/Dessert/' element={<Dessert />} />
+          <Route path='/Menu/Drinks/' element={<Drinks />} />
+          <Route path='/Menu/Shakes/' element={<Shakes />} />
+          <Route path='/Menu/Special/' element={<Special />} />
+
+
+          <Route path='/Setting/EditRestaurantProfile/' element={<EditRestaurantProfile />} />
+
+          <Route path='/Setting/ManageCategory/' element={<ManageCategory />} />
+          <Route path='/AddCategory/' element={<AddCategory />} />
+          
+          <Route path='/Setting/ChangeTheme/' element={<ChangeTheme />} />
+          <Route path='/Setting/ChangeFont/' element={<ChangeFont />} />
+          <Route path='/Setting/ChangePassword/' element={<ChangePassword />} />
+          <Route path='/Setting/GenerateQRCode/' element={<GenerateQRCode />} />
+          <Route path='/Setting/GenerateQRCode/DownlodeQRCode/' element={<DownlodeQRCode />} />
+          <Route path='/Setting/AddBranch/' element={<AddBranch />} />
+
+          <Route path='/Faq/' element={<Faq />} />
+
+          <Route path='/Contact/' element={<Contact />} />
+
+        </Routes>
+     
       </Router>
 
 

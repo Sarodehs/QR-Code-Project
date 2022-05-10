@@ -16,14 +16,12 @@
  /* width: 86vw; */
 }
 .contantfixwh{
-   width: 90vw;
-   height: 130vh;
+   width: 100vw;
+   height: 100vh;
 }
-@media screen and (max-width: 1280px){
-   .contantfixwh{
-      width: 100%;
-      height: 100%;
-   } 
+.cardwh{
+   width: 60vw;
+   height: 100%;
 }
 .buttonfocuscolor{
    color: #fff !important; 
@@ -32,9 +30,12 @@
    outline-width: 0 !important;
    box-shadow: none !important;
 }
-/* .buttonfocuscolor :hover{
-   background-color: #6dff50;
-} */
+
+.borderradi{
+   border-radius: 25px;
+   background-color: #0C2027;
+}
+
 .inputfocus{
    outline: none !important;
    outline-width: 0 !important;
@@ -48,10 +49,12 @@
    box-shadow: 0 0 10px rgb(184, 181, 181);
    border-radius: 10px;
 }
-.searchbar .form-select{
-   background-image: url("https://img.icons8.com/material-sharp/384/000000/search.png");
-   background-size: 20px 20px;
-}
+
+
+.detalistext .carousel-caption{
+   bottom: 30rem;
+   }
+
 
 /* top nav start */
 .topnavpadd{
@@ -73,12 +76,12 @@
 }
 .sidebar {
    background: #fff; 
-   padding-right: 0px;
-}
-.sidebar ul  {
+   
    width: 100%;
    text-decoration: none !important;  
-}.sidebar  li {
+}
+
+.sidebar  li {
   border-bottom: solid gray 1px;
   border-radius: 1px;
   width: 100%;
@@ -102,7 +105,11 @@
    color: white !important;
     text-decoration: none;
 } 
-
+.sidebar .main-nav-active{
+   background: #B5876D !important;
+   color: white !important;
+    text-decoration: none; 
+}
 
 
 
@@ -126,6 +133,9 @@
    color: black!important;
 } 
 .sidebarmenu .active a{
+   color: black !important;
+}
+.sidebarmenu .main-nav-active{
    color: black !important;
 }
 .menuarrow {
@@ -161,7 +171,7 @@
    border: none;
    border: dashed 1px  #FF7000;
    background-color: #fff;
-   height: 150px;
+
 }
 /* dashboard card one end */
 
@@ -216,14 +226,13 @@
    width: auto;
 }
 .SettingNav ul  {
-   width: 100%;
+
    padding: 0px ;
    text-decoration: none !important;  
 }.SettingNav  li {
-  width: 100%;
+  width: 15vw;
 }
 .SettingNav  :hover :active a{
-  
    border-left: #B5876D 10px solid;
    width: 100%;
    color: #2C1238 !important;
@@ -245,7 +254,11 @@
    color: #2C1238 !important;
     text-decoration: none;
 } 
-
+.SettingNav .main-nav-active{
+   border-left: #B5876D 10px solid;
+   color: #2C1238 !important;
+    text-decoration: none;
+}
 
 /* SettingNav end */
 
@@ -297,8 +310,49 @@
 /* Contact Us end */
 
 
+/* SelectMenusidebar start */
+.SelectMenusidebar {
+   width: auto;
+   padding: 0px !important;
+}
+.SelectMenusidebar ul  {
+   padding: 0px ;
+
+   text-decoration: none !important;  
+}.SelectMenusidebar  li {
+  width: 70%;
+  margin: 5px;
+}
+.SelectMenusidebar  :hover :active a{
+   border: 2px solid #B5876D;
+   width: 100%;
+   color: #2C1238 !important;
+} 
+.SelectMenusidebar .nav-link {
+   border: 2px solid #fff;
+   background-color: #fff;
+   padding: 0px !important;
+   border-radius: 15px;
+   
+   color:black !important;
+  
+}
+ /* .SelectMenusidebar .active a{
+   border: 2px solid #B5876D;
+
+} 
+.SelectMenusidebar .main-nav-active{
+   border: 2px solid #B5876D;
+} */
+
+/* SelectMenusidebar end */
+
+
 /* footer start */
 .footerback{
    background-color: #E9E9E9;
 }
 /* footer end */
+
+
+

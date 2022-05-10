@@ -1,15 +1,22 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
-
-
+import Sidenav from "../Navbar/Sidenav";
+import Topnav from "../Navbar/Topnav";
+import Footer from "../Navbar/Footer";
 const Dashboard = () =>  {
         return (
             <>
-            <div className="container-fluid displayflex ">
-                <div className="row px-2">
-
+            <div className="container-fluid  ">
+            <Topnav/>
+                <div className="row">
+                     {/* <!-- side nav start --> */}
+                    <div className="col-auto col-md-2 col-xl-2 col-sm-2" >
+                       <Sidenav/>
+                    </div>
+                    {/* <!-- side nav end --> */}
+ 
                     {/* <!-- Content area start --> */}
-                    <div className="col-auto col-md-12 col-xl-12 col-sm-12 bg-light  justify-content-center p-4" >
+                    <div className="col-auto col-md-10 col-xl-10 col-sm-10 bg-light  justify-content-center p-4" >
                         <div className="row ">
                             {/* <!-- dashboard card one start --> */}
                             <div className="col-xl-6 col-md-12 col-sm-12 cardoneshadow">
@@ -32,7 +39,7 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <NavLink to="Menu/Starters/"><button href="" class="btn btn-gray  cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <NavLink to="/Menu/Starters/"><button href="" class="btn btn-gray  cardbuttonfocus" ><h5 className="d-flex">66
                                                         <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
@@ -55,7 +62,7 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <NavLink to="Menu/Curries/"> <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <NavLink to="/Menu/Curries/"> <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
                                                         <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
@@ -78,7 +85,7 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <NavLink to="Menu/Soups/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <NavLink to="/Menu/Soups/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
                                                         <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
@@ -101,7 +108,7 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <NavLink to="Menu/Drinks/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <NavLink to="/Menu/Drinks/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
                                                         <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
@@ -126,7 +133,7 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <NavLink to="Menu/Dessert/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <NavLink to="/Menu/Dessert/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
                                                         <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
@@ -149,7 +156,7 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <NavLink to="Menu/Shakes/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <NavLink to="/Menu/Shakes/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
                                                         <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
@@ -172,7 +179,7 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <NavLink to="Menu/RiceBiriyani/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <NavLink to="/Menu/RiceBiriyani/"><button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
                                                         <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
@@ -195,7 +202,7 @@ const Dashboard = () =>  {
                                                 <div className="col-md-4 col-xl-3 col-sm-4 p-2 cardoneborder">
                                                     <div >
                                                         <h6>ITEMS</h6>&nbsp;
-                                                        <NavLink to="Menu/Special/">  <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
+                                                        <NavLink to="/Menu/Special/">  <button href="" class="btn btn-gray cardbuttonfocus" ><h5 className="d-flex">66
                                                         <i className="material-icons-outlined">navigate_next</i></h5></button></NavLink>
                                                     </div>
                                                 </div>
@@ -203,15 +210,15 @@ const Dashboard = () =>  {
                                         </div>
                                     </div>
 
-                                    <div className="d-grid gap-2 col-xl-6 col-md-4 col-sm-4 mx-auto  mb-4" >
-                                      <button href="/" className="buttonadd">+ ADD NEW CATEGORY</button>
+                                    <div className="d-grid gap-2 col-xl-6 col-md-4 col-sm-4 mx-auto m-4" >
+                                      <button href="/" className="buttonadd p-5">+ ADD NEW CATEGORY</button>
                                     </div>
 
                                 </div>
                             </div>
                             {/* <!-- dashboard card one end --> */}
                             {/* <!-- dashboard card two start --> */}
-                            <div className="col-xl-6 col-md-12 col-sm-12 cardtwoshadow" >
+                            <div className="col-xl-6 col-md-12 col-sm-12 cardtwoshadow px-4" >
                                 <div className="card1">
                                     <div className="card-header headingcardtwo  text-muted">
                                         <div className={({isActive}) => (isActive ? 'main-nav-active': 'inactive')}>
@@ -576,6 +583,7 @@ const Dashboard = () =>  {
                     </div>
                     {/* <!-- Content area start --> */}
                 </div>
+             <Footer />
             </div>
 
             </>

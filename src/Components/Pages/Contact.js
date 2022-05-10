@@ -1,14 +1,23 @@
+
 import React from "react";
+import Sidenav from "../Navbar/Sidenav";
+import Topnav from "../Navbar/Topnav";
+import Footer from "../Navbar/Footer"; 
 
-
-const Contact = () => {
-    return (
-        <>
-            <div className="container-fluid displayflex ">
-                <div className="row px-2">
+const Contact = () =>  {
+        return (
+            <>
+            <div className="container-fluid  ">
+            <Topnav/>
+                <div className="row">
+                     {/* <!-- side nav start --> */}
+                    <div className="col-auto col-md-2 col-xl-2 col-sm-2 " >
+                       <Sidenav/>
+                    </div>
+                    {/* <!-- side nav end --> */}
+ 
                     {/* <!-- Content area start --> */}
-
-                    <div className=" col-md-12 col-xl-12 col-sm-12 bg-light contantfixwh justify-content-center px-4 W-100">
+                    <div className=" col-md-10 col-xl-10 col-sm-10  bg-light  justify-content-center px-4 W-100">
                         <div className="row">
                             <div className="col-xl-5 col-md-5 justify-content-center align-items-center d-flex" >
                                 <div className="card contactpadd" >
@@ -86,15 +95,16 @@ const Contact = () => {
                                 </form>
 
                             </div>
-
                         </div>
                     </div>
                     {/* <!-- Content area start --> */}
                 </div>
+            <Footer />
             </div>
-        </>
-    );
-}
+
+            </>
+        );
+    }
 
 
 export default Contact;

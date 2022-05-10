@@ -1,13 +1,22 @@
 import React from "react";
+import Sidenav from "../Navbar/Sidenav";
+import Topnav from "../Navbar/Topnav";
+import Footer from "../Navbar/Footer"; 
 
 
 const EditDish = () => {
     return (
         <>
-            <div className="container-fluid displayflex  ">
-                <div className="row px-2">
+            <div className="container-fluid   ">
+            <Topnav/>
+                <div className="row">
+                     {/* <!-- side nav start --> */}
+                     <div className="col-auto col-md-2 col-xl-2 col-sm-2 " >
+                       <Sidenav/>
+                    </div>
+                    {/* <!-- side nav end --> */}
                     {/* <!-- Content area start --> */}
-                    <div className=" col-md-12 col-xl-12 col-sm-12 bg-light contantfixwh justify-content-center " >
+                    <div className=" col-md-10 col-xl-10 col-sm-10 bg-light  justify-content-center " >
                         <div className="row p-4">
                             <div className="col-xl-6 col-md-6 col-sm-6 ">
                                 <h3>Edit Dish</h3>
@@ -80,6 +89,7 @@ const EditDish = () => {
                     </div>
                     {/* <!-- Content area start --> */}
                 </div>
+                <Footer />
             </div>
 
         </>
