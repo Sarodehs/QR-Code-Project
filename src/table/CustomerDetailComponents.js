@@ -1,6 +1,5 @@
 
 import Avatar from "@material-ui/core/Avatar";
-// import '../App.css'
 
 function CustomerDetailsCard(){
     return(

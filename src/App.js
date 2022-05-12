@@ -1,6 +1,6 @@
 import NavigationRoute from "./Navigation/NavigationRoute";
 import Sigin from "./SignIn";
-import "./App.css";
+import "./Admin-App.css";
 
 function App() {
 

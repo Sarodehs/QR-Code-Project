@@ -2,7 +2,7 @@ import React from "react";
 import classnames from "classnames";
 import Header from "./Header";
 import { NavLink,Link,   Outlet } from 'react-router-dom';
-import '../App.css'
+import '../Admin-App.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class Sidebar extends React.Component {

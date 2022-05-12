@@ -4,7 +4,6 @@ import MOCK_DATA from './tbl_data.json'
 import { COLUMNS } from "./tbl_column.js" 
 import TicketEdit from './TicketEdit'
 import { NavLink } from 'react-router-dom'
-// import "../App.css"
 
 export const PaginationTable = () => {
   const columns = useMemo(() => COLUMNS, [])
