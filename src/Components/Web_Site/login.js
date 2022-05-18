@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from 'react-router-dom' 
 
 const login = () => {
-    const isAdmin=false;
+    const isAdmin=true;
     return(
         <>
 
@@ -64,7 +64,7 @@ const login = () => {
                                 {isAdmin ? 
                                 <NavLink to="/Signup/">  <button type="button" class="btn btn-sm px-5 pe-5 mt-4 mb-4 navbtn inputfocus w-100">SIGN IN </button></NavLink>
                                 : 
-                                <NavLink to="/admin-dashboard/">  <button type="button" class="btn btn-sm px-5 pe-5 mt-4 mb-4 navbtn inputfocus w-100">SIGN IN </button></NavLink>
+                                <NavLink to="/super-admin-login/">  <button type="button" class="btn btn-sm px-5 pe-5 mt-4 mb-4 navbtn inputfocus w-100">SIGN IN </button></NavLink>
                                 }
                                 {/* send request to create account */}
                                 <p> Don't have an account? <a href="/#">Send Request</a></p>
